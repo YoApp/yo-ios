@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YoTableViewSheetController">
+            <connections>
+                <outlet property="doneButton" destination="FdX-Oc-T0A" id="nZH-aY-zKZ"/>
+                <outlet property="tableView" destination="WeL-oK-XLQ" id="Qic-C2-S5B"/>
+                <outlet property="tableviewContainer" destination="8J7-Cw-qpb" id="Mvr-X7-1jH"/>
+                <outlet property="tableviewContainerHeightConstraint" destination="BVT-Kl-kvv" id="9Sq-NY-nIZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdX-Oc-T0A">
+                    <rect key="frame" x="8" y="547" width="584" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="0Vr-Pt-wuL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doneButtonPressed:" destination="-1" eventType="touchUpInside" id="hPC-JB-Gwm"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8J7-Cw-qpb">
+                    <rect key="frame" x="8" y="332" width="584" height="207"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WeL-oK-XLQ">
+                            <rect key="frame" x="0.0" y="0.0" width="584" height="207"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WeL-oK-XLQ" firstAttribute="right" secondItem="8J7-Cw-qpb" secondAttribute="right" id="GOh-Qd-qfS"/>
+                        <constraint firstItem="WeL-oK-XLQ" firstAttribute="top" secondItem="8J7-Cw-qpb" secondAttribute="top" id="T1p-Fg-r9d"/>
+                        <constraint firstItem="WeL-oK-XLQ" firstAttribute="left" secondItem="8J7-Cw-qpb" secondAttribute="left" id="kSA-Hd-mpW"/>
+                        <constraint firstAttribute="bottom" secondItem="WeL-oK-XLQ" secondAttribute="bottom" id="kx6-Tv-FOE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.15542715787887573" green="0.2203737199306488" blue="0.2959403395652771" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="FdX-Oc-T0A" firstAttribute="right" secondItem="i5M-Pr-FkT" secondAttribute="right" constant="-8" id="4Gf-uf-cz1"/>
+                <constraint firstItem="8J7-Cw-qpb" firstAttribute="left" secondItem="i5M-Pr-FkT" secondAttribute="left" constant="8" id="7S4-L4-CAc"/>
+                <constraint firstItem="FdX-Oc-T0A" firstAttribute="left" secondItem="i5M-Pr-FkT" secondAttribute="left" constant="8" id="8Do-fJ-LdB"/>
+                <constraint firstItem="8J7-Cw-qpb" firstAttribute="height" secondItem="FdX-Oc-T0A" secondAttribute="height" multiplier="4" constant="27" id="BVT-Kl-kvv"/>
+                <constraint firstItem="8J7-Cw-qpb" firstAttribute="right" secondItem="i5M-Pr-FkT" secondAttribute="right" constant="-8" id="XOE-Cv-nGY"/>
+                <constraint firstItem="FdX-Oc-T0A" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-8" id="hW3-sw-GXq"/>
+                <constraint firstItem="FdX-Oc-T0A" firstAttribute="top" secondItem="8J7-Cw-qpb" secondAttribute="bottom" constant="8" id="zIO-OK-H6D"/>
+            </constraints>
+            <point key="canvasLocation" x="402" y="241"/>
+        </view>
+    </objects>
+</document>

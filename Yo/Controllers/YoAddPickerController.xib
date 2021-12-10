@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YoAddPickerController">
+            <connections>
+                <outlet property="backgroundView" destination="G0C-C7-lSM" id="pyI-rg-Eb1"/>
+                <outlet property="createGroupButton" destination="BfP-vg-dDL" id="kaj-3E-WCl"/>
+                <outlet property="friendTipLabel" destination="aF3-ny-mFJ" id="1EL-b1-Brc"/>
+                <outlet property="friendTipView" destination="BB3-a9-fjK" id="OZN-J9-ZVV"/>
+                <outlet property="groupTipLabel" destination="Ajf-HR-DVE" id="0Et-qO-L3e"/>
+                <outlet property="groupTipView" destination="D2w-pM-s3Q" id="3fs-HH-Mqe"/>
+                <outlet property="tapToDismissView" destination="Aii-h2-lx3" id="WxQ-lA-nFy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yofriendButton" destination="Sk2-QJ-bOG" id="CPM-gK-eab"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aii-h2-lx3" userLabel="Translucent View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0C-C7-lSM" userLabel="Purple Background">
+                            <rect key="frame" x="30" y="140" width="540" height="320"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1c-Tz-Gcy">
+                                    <rect key="frame" x="0.0" y="0.0" width="540" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsW-5C-pSF" userLabel="doneButton">
+                                            <rect key="frame" x="491" y="3" width="44" height="44"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="EbX-DJ-jCf"/>
+                                                <constraint firstAttribute="width" secondItem="xsW-5C-pSF" secondAttribute="height" multiplier="1:1" id="Ejp-8e-K1J"/>
+                                                <constraint firstAttribute="width" secondItem="xsW-5C-pSF" secondAttribute="height" multiplier="23:15" id="R0Q-3W-hSz"/>
+                                                <constraint firstAttribute="width" constant="44" id="shX-sn-g6h"/>
+                                            </constraints>
+                                            <inset key="contentEdgeInsets" minX="9" minY="13" maxX="17" maxY="13"/>
+                                            <state key="normal" image="dismiss_image">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Ejp-8e-K1J"/>
+                                                    <exclude reference="R0Q-3W-hSz"/>
+                                                </mask>
+                                            </variation>
+                                            <connections>
+                                                <action selector="close" destination="-1" eventType="touchUpInside" id="TkN-yK-tsS"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-H3-PSV">
+                                            <rect key="frame" x="0.0" y="0.0" width="540" height="50"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" red="0.57647058819999997" green="0.2901960784" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Gqx-H3-PSV" secondAttribute="trailing" id="8Zo-g3-gkT"/>
+                                        <constraint firstItem="Gqx-H3-PSV" firstAttribute="leading" secondItem="U1c-Tz-Gcy" secondAttribute="leading" id="HSJ-v4-8p3"/>
+                                        <constraint firstAttribute="bottom" secondItem="Gqx-H3-PSV" secondAttribute="bottom" id="V1L-hA-FoS"/>
+                                        <constraint firstAttribute="centerY" secondItem="xsW-5C-pSF" secondAttribute="centerY" id="e9I-8K-xBo"/>
+                                        <constraint firstAttribute="height" constant="50" id="ijv-PV-BeY"/>
+                                        <constraint firstItem="Gqx-H3-PSV" firstAttribute="top" secondItem="U1c-Tz-Gcy" secondAttribute="top" id="jtd-LD-MYo"/>
+                                        <constraint firstAttribute="trailing" secondItem="xsW-5C-pSF" secondAttribute="trailing" constant="5" id="m5t-Y9-5L8"/>
+                                        <constraint firstItem="xsW-5C-pSF" firstAttribute="leading" secondItem="Gqx-H3-PSV" secondAttribute="trailing" id="r29-wJ-VcW"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="r29-wJ-VcW"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BB3-a9-fjK" userLabel="Yo a Friend Block">
+                                    <rect key="frame" x="30" y="65" width="480" height="110"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get a Yo when your favorite Instgrammer posts a pic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF3-ny-mFJ" customClass="YoLabel">
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="52"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="59" id="Jlq-ES-CSj"/>
+                                                <constraint firstAttribute="height" constant="78" id="jcx-bU-sRa"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Jlq-ES-CSj"/>
+                                                    <exclude reference="jcx-bU-sRa"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk2-QJ-bOG" customClass="YoButton">
+                                            <rect key="frame" x="0.0" y="60" width="480" height="50"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.20392156859999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="8TA-yZ-kGT"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                            <state key="normal" title="Yo a Friend">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="addFriendPressed:" destination="-1" eventType="touchUpInside" id="ACk-k2-Dim"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Sk2-QJ-bOG" secondAttribute="bottom" id="0G3-yd-rMa"/>
+                                        <constraint firstItem="Sk2-QJ-bOG" firstAttribute="top" secondItem="aF3-ny-mFJ" secondAttribute="bottom" id="156-Dz-kcy"/>
+                                        <constraint firstAttribute="height" constant="110" id="5YK-EY-8H3"/>
+                                        <constraint firstAttribute="trailing" secondItem="aF3-ny-mFJ" secondAttribute="trailing" id="6QJ-98-yfw"/>
+                                        <constraint firstItem="aF3-ny-mFJ" firstAttribute="top" secondItem="Sk2-QJ-bOG" secondAttribute="bottom" id="988-eQ-Gzi"/>
+                                        <constraint firstItem="Sk2-QJ-bOG" firstAttribute="top" secondItem="aF3-ny-mFJ" secondAttribute="bottom" constant="8" symbolic="YES" id="GcU-JR-u9Z"/>
+                                        <constraint firstItem="aF3-ny-mFJ" firstAttribute="leading" secondItem="BB3-a9-fjK" secondAttribute="leading" id="Ggn-fR-jg0"/>
+                                        <constraint firstAttribute="trailing" secondItem="Sk2-QJ-bOG" secondAttribute="trailing" id="HXJ-Hg-K0w"/>
+                                        <constraint firstItem="aF3-ny-mFJ" firstAttribute="top" secondItem="BB3-a9-fjK" secondAttribute="top" id="IAX-VV-7sA"/>
+                                        <constraint firstItem="Sk2-QJ-bOG" firstAttribute="leading" secondItem="BB3-a9-fjK" secondAttribute="leading" id="b4E-eZ-ek1"/>
+                                        <constraint firstItem="Sk2-QJ-bOG" firstAttribute="leading" secondItem="BB3-a9-fjK" secondAttribute="leading" id="t08-Vd-YLk"/>
+                                        <constraint firstAttribute="bottom" secondItem="Sk2-QJ-bOG" secondAttribute="bottom" id="tvu-E0-39E"/>
+                                        <constraint firstAttribute="trailing" secondItem="Sk2-QJ-bOG" secondAttribute="trailing" id="wsB-Pv-2Sr"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="988-eQ-Gzi"/>
+                                            <exclude reference="0G3-yd-rMa"/>
+                                            <exclude reference="156-Dz-kcy"/>
+                                            <exclude reference="HXJ-Hg-K0w"/>
+                                            <exclude reference="b4E-eZ-ek1"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2w-pM-s3Q" userLabel="Create Group">
+                                    <rect key="frame" x="30" y="193" width="480" height="110"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get a Yo when your favorite Instgrammer posts a pic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajf-HR-DVE" customClass="YoLabel">
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="52"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="78" id="DZX-yL-xIZ"/>
+                                                <constraint firstAttribute="height" constant="59" id="EnD-7j-tVC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="DZX-yL-xIZ"/>
+                                                    <exclude reference="EnD-7j-tVC"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfP-vg-dDL" customClass="YoButton">
+                                            <rect key="frame" x="0.0" y="60" width="480" height="50"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.16078431900000001" green="0.50196081400000003" blue="0.7254902124" alpha="1" colorSpace="deviceRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="dn7-y3-yWQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                            <state key="normal" title="Create Group">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="createGroupPressed:" destination="-1" eventType="touchUpInside" id="xgt-oQ-B8j"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Ajf-HR-DVE" secondAttribute="trailing" id="0qm-Ty-E7c"/>
+                                        <constraint firstItem="Ajf-HR-DVE" firstAttribute="leading" secondItem="D2w-pM-s3Q" secondAttribute="leading" id="51j-3s-v66"/>
+                                        <constraint firstAttribute="trailing" secondItem="BfP-vg-dDL" secondAttribute="trailing" id="6AO-wP-x1t"/>
+                                        <constraint firstAttribute="trailing" secondItem="BfP-vg-dDL" secondAttribute="trailing" id="7rK-Rf-EAH"/>
+                                        <constraint firstAttribute="height" constant="110" id="I0e-oY-wBk"/>
+                                        <constraint firstItem="BfP-vg-dDL" firstAttribute="leading" secondItem="D2w-pM-s3Q" secondAttribute="leading" id="O8I-b7-WmX"/>
+                                        <constraint firstItem="Ajf-HR-DVE" firstAttribute="top" secondItem="D2w-pM-s3Q" secondAttribute="top" id="TyT-Lz-XfQ"/>
+                                        <constraint firstItem="Ajf-HR-DVE" firstAttribute="top" secondItem="BfP-vg-dDL" secondAttribute="bottom" id="UP3-m8-hws"/>
+                                        <constraint firstAttribute="bottom" secondItem="BfP-vg-dDL" secondAttribute="bottom" id="bbE-zH-P05"/>
+                                        <constraint firstItem="BfP-vg-dDL" firstAttribute="leading" secondItem="D2w-pM-s3Q" secondAttribute="leading" id="ck8-kH-Tg6"/>
+                                        <constraint firstItem="BfP-vg-dDL" firstAttribute="top" secondItem="Ajf-HR-DVE" secondAttribute="bottom" constant="8" symbolic="YES" id="hN2-je-fac"/>
+                                        <constraint firstAttribute="bottom" secondItem="BfP-vg-dDL" secondAttribute="bottom" id="hvw-Ls-NAx"/>
+                                        <constraint firstItem="BfP-vg-dDL" firstAttribute="top" secondItem="Ajf-HR-DVE" secondAttribute="bottom" id="v3Q-zy-qx3"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="UP3-m8-hws"/>
+                                            <exclude reference="7rK-Rf-EAH"/>
+                                            <exclude reference="O8I-b7-WmX"/>
+                                            <exclude reference="hvw-Ls-NAx"/>
+                                            <exclude reference="v3Q-zy-qx3"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" red="0.57647058819999997" green="0.2901960784" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="BB3-a9-fjK" firstAttribute="leading" secondItem="G0C-C7-lSM" secondAttribute="leading" constant="30" id="2mV-hF-og6"/>
+                                <constraint firstAttribute="trailing" secondItem="U1c-Tz-Gcy" secondAttribute="trailing" id="3dX-df-0ik"/>
+                                <constraint firstItem="BB3-a9-fjK" firstAttribute="centerX" secondItem="U1c-Tz-Gcy" secondAttribute="centerX" id="4gM-OX-K2s"/>
+                                <constraint firstItem="U1c-Tz-Gcy" firstAttribute="top" secondItem="G0C-C7-lSM" secondAttribute="top" id="B7f-JN-9Vg"/>
+                                <constraint firstAttribute="height" constant="320" id="U0W-kh-9ZQ"/>
+                                <constraint firstItem="D2w-pM-s3Q" firstAttribute="top" secondItem="BB3-a9-fjK" secondAttribute="bottom" constant="18" id="Xha-dK-i7o"/>
+                                <constraint firstAttribute="height" constant="380" id="dGS-99-Rhx"/>
+                                <constraint firstItem="BB3-a9-fjK" firstAttribute="leading" secondItem="D2w-pM-s3Q" secondAttribute="leading" id="ipE-K3-2bW"/>
+                                <constraint firstItem="U1c-Tz-Gcy" firstAttribute="leading" secondItem="G0C-C7-lSM" secondAttribute="leading" id="jPi-Wj-fdc"/>
+                                <constraint firstItem="BB3-a9-fjK" firstAttribute="top" secondItem="G0C-C7-lSM" secondAttribute="top" constant="65" id="jmw-Ot-CP8"/>
+                                <constraint firstItem="D2w-pM-s3Q" firstAttribute="trailing" secondItem="BB3-a9-fjK" secondAttribute="trailing" id="oMB-kF-0Eh"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="dGS-99-Rhx"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="G0C-C7-lSM" firstAttribute="leading" secondItem="Aii-h2-lx3" secondAttribute="leading" constant="30" id="D4U-h3-THl"/>
+                        <constraint firstItem="G0C-C7-lSM" firstAttribute="centerX" secondItem="Aii-h2-lx3" secondAttribute="centerX" id="vIG-jr-Lej"/>
+                        <constraint firstItem="G0C-C7-lSM" firstAttribute="centerY" secondItem="Aii-h2-lx3" secondAttribute="centerY" id="xFW-HW-JLD"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="FV8-lK-eR8" appends="YES" id="WCg-j6-bbD"/>
+                    </connections>
+                </view>
+            </subviews>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Aii-h2-lx3" secondAttribute="bottom" id="1y0-nX-D77"/>
+                <constraint firstItem="Aii-h2-lx3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UXe-vF-2Xa"/>
+                <constraint firstItem="Aii-h2-lx3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fIv-CW-hK8"/>
+                <constraint firstAttribute="trailing" secondItem="Aii-h2-lx3" secondAttribute="trailing" id="v0d-gq-9BD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="561" y="395"/>
+        </view>
+        <tapGestureRecognizer id="FV8-lK-eR8">
+            <connections>
+                <action selector="didTapToDismissViewWithGesture:" destination="-1" id="wug-PZ-gqL"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="dismiss_image" width="31" height="31"/>
+    </resources>
+</document>

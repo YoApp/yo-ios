@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--YoSendingInterfaceControllerID-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="YoSendingInterfaceControllerID" id="AgC-eL-Hgc" customClass="YoInterfaceController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" hidden="YES" layout="vertical" id="eFO-RF-XP6" userLabel="Static Alert Group">
+                            <items>
+                                <label alignment="center" text="Yo" textAlignment="center" id="fXT-zh-Bjh">
+                                    <color key="textColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                </label>
+                                <label width="1" alignment="center" text="Please Login" textAlignment="center" numberOfLines="0" id="n7s-g9-lnC">
+                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <table alignment="left" id="efh-FY-dSK">
+                            <items>
+                                <tableRow identifier="YoUserRowControllerID" id="Z5O-Dp-lJE" customClass="YoUserRowController" customModule="Yo_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="44" alignment="left" id="6Dk-3Y-KCM">
+                                        <items>
+                                            <label width="1" widthAdjustment="-8" height="1" alignment="center" text="Display Name" textAlignment="center" minimumScaleFactor="0.10000000000000001" id="Or7-HC-qfS">
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.92706388235092163" green="0.72759377956390381" blue="0.064024783670902252" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="displayNameLabel" destination="Or7-HC-qfS" id="eE2-kP-JSR"/>
+                                        <outlet property="group" destination="6Dk-3Y-KCM" id="Ptv-jp-nXn"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="alertLabel" destination="n7s-g9-lnC" id="02H-oE-K1Z"/>
+                        <outlet property="alertMessageUIGroup" destination="eFO-RF-XP6" id="H7o-t8-KzJ"/>
+                        <outlet property="tableView" destination="efh-FY-dSK" id="4YG-iz-ukU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="431"/>
+        </scene>
+        <!--YoViewInterfaceControllerID-->
+        <scene sceneID="UuV-an-KPL">
+            <objects>
+                <controller identifier="YoViewInterfaceControllerID" id="3vG-fa-k7b" customClass="YoViewInterfaceController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <separator alignment="left" id="PIu-K5-QvC">
+                            <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" radius="12" spacing="0.0" id="QdB-zB-xFM" userLabel="Container">
+                            <items>
+                                <group width="1" alignment="center" id="wvv-SQ-Sfz" userLabel="Details Group">
+                                    <items>
+                                        <group height="52" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" id="fsI-CC-mry" userLabel="Photo Icon">
+                                            <items>
+                                                <imageView width="40" height="40" alignment="center" verticalAlignment="center" image="yo_icon_filled.png" contentMode="scaleAspectFit" id="unP-iF-FLg"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="1" widthAdjustment="-38" alignment="center" verticalAlignment="center" layout="vertical" spacing="0.0" id="KQk-iT-WdC">
+                                            <items>
+                                                <separator alignment="left" id="WdD-4N-o9M">
+                                                    <color key="color" red="0.10368984940000001" green="0.56898564100000004" blue="0.44660383460000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                </separator>
+                                                <label width="1" alignment="left" text="from" textAlignment="left" numberOfLines="0" id="yks-7R-Rfk">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" alignment="left" text="USERNAME" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="gpc-zx-vfN">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.16847138110000001" green="0.51802176239999997" blue="0.82454198599999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="1" alignment="left" verticalAlignment="bottom" hidden="YES" contentMode="scaleAspectFill" radius="12" id="BHv-XS-v91" userLabel="PhotoGroup">
+                                    <items>
+                                        <imageView width="1" alignment="left" contentMode="scaleAspectFill" id="8yZ-ht-poq"/>
+                                    </items>
+                                    <color key="backgroundColor" red="0.92549019610000005" green="0.72941176470000002" blue="0.062745098040000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" layout="vertical" spacing="4" id="LtA-Qb-vDS" userLabel="Yo Back Button Group">
+                            <items>
+                                <button width="1" height="44" alignment="center" title="Yo Back" id="vnv-wZ-PL0">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                    <connections>
+                                        <action selector="didPressYoBackButton" destination="3vG-fa-k7b" id="1vs-9c-4oK"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" id="FVu-3K-2wt">
+                                    <group key="contentGroup" width="1" height="44" alignment="left" radius="6" id="Hfn-sa-qlJ">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="📍Yo Back" id="bnf-ZU-aft">
+                                                <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="didPressYoBackLocationButton" destination="3vG-fa-k7b" id="ovW-Y0-eHe"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" verticalAlignment="bottom" id="bSo-WB-MbH">
+                            <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </separator>
+                    </items>
+                    <connections>
+                        <outlet property="usernameLabel" destination="gpc-zx-vfN" id="zr3-vR-93U"/>
+                        <outlet property="yoBackButton" destination="vnv-wZ-PL0" id="oi5-FX-IH0"/>
+                        <outlet property="yoBackButtonsGroup" destination="LtA-Qb-vDS" id="3fb-TL-9pJ"/>
+                        <outlet property="yoBackLocationButtonLabel" destination="bnf-ZU-aft" id="vAK-JQ-tff"/>
+                        <outlet property="yoDescriptionLabel" destination="yks-7R-Rfk" id="Nza-eU-1pc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="487" y="435"/>
+        </scene>
+        <!--YoLocationViewInterfaceControllerID-->
+        <scene sceneID="U4L-BP-xc4">
+            <objects>
+                <controller identifier="YoLocationViewInterfaceControllerID" id="f7I-MM-fJC" customClass="YoLocationViewInterfaceController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <separator alignment="left" id="RGK-6l-MhO">
+                            <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" radius="12" spacing="3" id="dy1-ng-yyz">
+                            <items>
+                                <map width="1" height="140" alignment="center" id="F0b-DK-E3W">
+                                    <variation key="device=watch38mm" height="130"/>
+                                </map>
+                                <group width="1" alignment="center" id="paT-zk-s5D" userLabel="Details Group">
+                                    <items>
+                                        <group height="52" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" id="gEC-Mr-1qJ" userLabel="Photo Icon">
+                                            <items>
+                                                <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="location_pin_icon.png" contentMode="scaleAspectFit" id="rlf-cc-zqh"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="1" widthAdjustment="-42" alignment="center" verticalAlignment="center" layout="vertical" spacing="0.0" id="AWb-wk-A5r">
+                                            <items>
+                                                <separator alignment="left" id="GI9-DC-wXU">
+                                                    <color key="color" red="0.10368984940000001" green="0.56898564100000004" blue="0.44660383460000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                </separator>
+                                                <label width="1" alignment="left" text="Location from" textAlignment="left" numberOfLines="0" id="DSD-OI-Bs0">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" alignment="left" text="REALLYLONGUSERNAME" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="Mup-0v-Rv2">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <separator alignment="right" id="zHz-ge-kUi">
+                                            <color key="color" red="0.10368984940000001" green="0.56898564100000004" blue="0.44660383460000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </separator>
+                                    </items>
+                                    <color key="backgroundColor" red="0.16847138110000001" green="0.51802176239999997" blue="0.82454198599999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.15542715787887573" green="0.2203737199306488" blue="0.2959403395652771" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" layout="vertical" spacing="4" id="PAX-nT-tW2" userLabel="Yo Back Button Group">
+                            <items>
+                                <button width="1" height="44" alignment="center" title="Yo Back" id="mn5-V5-ko5">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                    <connections>
+                                        <action selector="didPressYoBackButton" destination="3vG-fa-k7b" id="jhy-5p-yoa"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" id="mpR-He-4wC">
+                                    <group key="contentGroup" width="1" height="44" alignment="left" radius="6" id="OW1-Fx-hXl">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="📍Yo Back" id="bi8-jp-flA">
+                                                <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="didPressYoBackLocationButton" destination="3vG-fa-k7b" id="vPT-l3-9uz"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" verticalAlignment="bottom" id="kF9-jY-Ehz">
+                            <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                    </items>
+                    <connections>
+                        <outlet property="interfaceMap" destination="F0b-DK-E3W" id="TOs-Ah-ofh"/>
+                        <outlet property="usernameLabel" destination="Mup-0v-Rv2" id="wwx-ZI-Lms"/>
+                        <outlet property="yoBackButton" destination="mn5-V5-ko5" id="mxa-68-rgh"/>
+                        <outlet property="yoBackButtonsGroup" destination="PAX-nT-tW2" id="mAZ-dG-5cX"/>
+                        <outlet property="yoBackLocationButtonLabel" destination="bi8-jp-flA" id="FvJ-qL-2uT"/>
+                        <outlet property="yoDescriptionLabel" destination="DSD-OI-Bs0" id="ZFv-xI-F77"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="700" y="509"/>
+        </scene>
+        <!--YoPhotoViewInterfaceControllerID-->
+        <scene sceneID="mni-2j-c91">
+            <objects>
+                <controller identifier="YoPhotoViewInterfaceControllerID" id="kPH-nl-GUn" customClass="YoPhotoViewInterfaceController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <separator alignment="left" id="WGf-rl-f5L">
+                            <color key="color" red="0.16847138110000001" green="0.51802176239999997" blue="0.82454198599999995" alpha="0.01" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" radius="12" spacing="0.0" id="cMw-Xr-HJP" userLabel="Container">
+                            <items>
+                                <group width="1" alignment="left" hidden="YES" contentMode="scaleAspectFill" radius="12" id="pPm-Uh-fOs" userLabel="PhotoGroup">
+                                    <items>
+                                        <imageView width="1" alignment="left" contentMode="scaleAspectFill" id="wsJ-cv-Fl2"/>
+                                    </items>
+                                    <color key="backgroundColor" red="0.92549019607843142" green="0.72941176470588232" blue="0.062745098039215685" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                                <group width="1" alignment="center" id="Imc-6Y-YiU" userLabel="Details Group">
+                                    <items>
+                                        <group height="52" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" id="qCh-Rk-oVy" userLabel="Photo Icon">
+                                            <items>
+                                                <imageView width="40" height="40" alignment="center" verticalAlignment="center" image="photo_icon_color.png" contentMode="scaleAspectFit" id="fW8-li-YeV"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.53214329481124878" green="0.25046047568321228" blue="0.65504401922225952" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="1" widthAdjustment="-38" alignment="center" verticalAlignment="center" layout="vertical" spacing="0.0" id="wSl-X4-cFr">
+                                            <items>
+                                                <separator alignment="left" id="Yh0-4X-KcF">
+                                                    <color key="color" red="0.10368984940000001" green="0.56898564100000004" blue="0.44660383460000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                </separator>
+                                                <label width="1" alignment="left" text="Photo from" textAlignment="left" numberOfLines="0" id="eUl-IE-cez">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" alignment="left" text="USERNAME" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="NhX-eX-mUC">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.16847138106822968" green="0.51802176237106323" blue="0.82454198598861694" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" layout="vertical" spacing="4" id="nOd-T3-20E" userLabel="Yo Back Button Group">
+                            <items>
+                                <button width="1" height="44" alignment="center" title="Yo Back" id="xGF-Tp-RHu">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                    <connections>
+                                        <action selector="didPressYoBackButton" destination="3vG-fa-k7b" id="FHx-uG-zQT"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" id="tdi-Jl-NOO">
+                                    <group key="contentGroup" width="1" height="44" alignment="left" radius="6" id="r1s-xn-PXs">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="📍Yo Back" id="UJn-7F-bQR">
+                                                <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="didPressYoBackLocationButton" destination="3vG-fa-k7b" id="lXN-IE-p4e"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" verticalAlignment="bottom" id="auH-1A-dNB">
+                            <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                    </items>
+                    <connections>
+                        <outlet property="imageContainer" destination="wsJ-cv-Fl2" id="5VQ-4X-dzd"/>
+                        <outlet property="photoGroup" destination="pPm-Uh-fOs" id="GvW-YH-Xxi"/>
+                        <outlet property="usernameLabel" destination="NhX-eX-mUC" id="gl6-NI-Cuv"/>
+                        <outlet property="yoBackButton" destination="xGF-Tp-RHu" id="Cfy-Y3-S7W"/>
+                        <outlet property="yoBackButtonsGroup" destination="nOd-T3-20E" id="NWh-tt-52W"/>
+                        <outlet property="yoBackLocationButtonLabel" destination="UJn-7F-bQR" id="czW-Oz-ldc"/>
+                        <outlet property="yoDescriptionLabel" destination="eUl-IE-cez" id="QPJ-JU-aZX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="892" y="435"/>
+        </scene>
+        <!--YoLinkViewInterfaceControllerID-->
+        <scene sceneID="1EB-ok-tsm">
+            <objects>
+                <controller identifier="YoLinkViewInterfaceControllerID" id="fYE-H4-3qb" customClass="YoLinkViewInterfaceController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <separator alignment="left" id="XwT-A2-973">
+                            <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" radius="12" spacing="0.0" id="n9U-ev-T38" userLabel="Container">
+                            <items>
+                                <group width="1" alignment="left" hidden="YES" contentMode="scaleAspectFill" radius="12" id="bdG-ws-f4P" userLabel="PhotoGroup">
+                                    <items>
+                                        <imageView width="1" alignment="left" contentMode="scaleAspectFill" id="k5y-tg-EXm"/>
+                                    </items>
+                                    <color key="backgroundColor" red="0.92549019610000005" green="0.72941176470000002" blue="0.062745098040000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                                <group width="1" alignment="center" id="VBq-9Q-L7f" userLabel="Details Group">
+                                    <items>
+                                        <separator alignment="left" id="Amv-kc-nhe">
+                                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <group height="52" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" id="bXx-3j-tFe" userLabel="Photo Icon">
+                                            <items>
+                                                <imageView width="35" height="35" alignment="center" verticalAlignment="center" image="paperclip_icon.png" contentMode="scaleAspectFit" id="iAg-tI-G3g"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <separator alignment="left" id="6mx-1h-qoQ">
+                                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <group width="1" widthAdjustment="-38" alignment="center" verticalAlignment="center" layout="vertical" spacing="0.0" id="uj2-de-xsv">
+                                            <items>
+                                                <separator alignment="left" id="QfI-Yp-fbY">
+                                                    <color key="color" red="0.10368984940000001" green="0.56898564100000004" blue="0.44660383460000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                </separator>
+                                                <label width="1" alignment="left" text="Link from" textAlignment="left" numberOfLines="0" id="rKE-FY-Cxz">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" alignment="left" text="USERNAME" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="MGe-Mp-v8u">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.16847138110000001" green="0.51802176239999997" blue="0.82454198599999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" layout="vertical" spacing="4" id="Xwq-TM-Hrw" userLabel="Yo Back Button Group">
+                            <items>
+                                <button width="1" height="44" alignment="center" title="Yo Back" id="CEy-6P-IqC">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                    <connections>
+                                        <action selector="didPressYoBackButton" destination="3vG-fa-k7b" id="Dc5-Hp-Weo"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" id="B28-2j-0FH">
+                                    <group key="contentGroup" width="1" height="44" alignment="left" radius="6" id="Oyk-SX-8ya">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="📍Yo Back" id="YZo-Y8-aWl">
+                                                <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="didPressYoBackLocationButton" destination="3vG-fa-k7b" id="k0B-MM-9qv"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" verticalAlignment="bottom" id="ydA-H6-gUn">
+                            <color key="color" red="0.16847138110000001" green="0.51802176239999997" blue="0.82454198599999995" alpha="0.01" colorSpace="calibratedRGB"/>
+                        </separator>
+                    </items>
+                    <connections>
+                        <outlet property="imageContainer" destination="k5y-tg-EXm" id="UKQ-Kl-VMy"/>
+                        <outlet property="photoGroup" destination="bdG-ws-f4P" id="XsB-hG-g4H"/>
+                        <outlet property="usernameLabel" destination="MGe-Mp-v8u" id="UnJ-vC-0Bk"/>
+                        <outlet property="yoBackButton" destination="CEy-6P-IqC" id="6cP-GM-EFW"/>
+                        <outlet property="yoBackButtonsGroup" destination="Xwq-TM-Hrw" id="BvI-Zg-mmR"/>
+                        <outlet property="yoBackLocationButtonLabel" destination="YZo-Y8-aWl" id="Wdc-t0-1xj"/>
+                        <outlet property="yoDescriptionLabel" destination="rKE-FY-Cxz" id="PuW-Vc-HMk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1095" y="435"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="Yo_Watch_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="FOd-Cc-8VO">
+                            <items>
+                                <group width="40" height="40" alignment="left" verticalAlignment="bottom" radius="20" id="dHC-mR-62L" userLabel="Yo Logo">
+                                    <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" spacing="7" id="uCw-4Q-Ouw">
+                            <items>
+                                <separator alignment="left" id="9aI-BA-0K5">
+                                    <color key="color" red="0.92706388235092163" green="0.72759377956390381" blue="0.064024783670902252" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" layout="vertical" spacing="1" id="S3x-2B-vPV" userLabel="Data Group">
+                                    <items>
+                                        <group width="1" alignment="left" id="xIm-A9-jRB" userLabel="Yo Group">
+                                            <items>
+                                                <separator alignment="left" id="GeL-Xf-BYW">
+                                                    <color key="color" red="0.53214329481124878" green="0.25046047568321228" blue="0.65504401922225952" alpha="1" colorSpace="calibratedRGB"/>
+                                                </separator>
+                                                <label alignment="left" verticalAlignment="center" text="0" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="52J-YM-3kv">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="22"/>
+                                                </label>
+                                                <separator alignment="left" id="Cj4-8R-2cU">
+                                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </separator>
+                                                <label alignment="left" verticalAlignment="center" text="New Yo's" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="ySZ-bg-T1o">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" id="8ah-fr-lZX" userLabel="Location Group">
+                                            <items>
+                                                <separator alignment="left" id="yYe-4N-Cva">
+                                                    <color key="color" red="0.15542715787887573" green="0.2203737199306488" blue="0.2959403395652771" alpha="1" colorSpace="calibratedRGB"/>
+                                                </separator>
+                                                <label alignment="left" verticalAlignment="center" text="0" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="zQo-Mu-nZE">
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                                </label>
+                                                <separator alignment="left" id="Bce-wd-gUw">
+                                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </separator>
+                                                <label alignment="left" verticalAlignment="center" text="Locations" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="5oQ-5J-a1H">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" id="yrg-AV-TTv" userLabel="Photo Group">
+                                            <items>
+                                                <separator alignment="left" id="E8d-6e-9EO">
+                                                    <color key="color" red="0.17358614504337311" green="0.77385067939758301" blue="0.36822772026062012" alpha="1" colorSpace="calibratedRGB"/>
+                                                </separator>
+                                                <label alignment="left" verticalAlignment="center" text="0" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="fjB-YQ-qGv">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                </label>
+                                                <separator alignment="left" id="X5Z-jl-1Ko">
+                                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </separator>
+                                                <label alignment="left" verticalAlignment="center" text="Photos" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="BPA-bT-R5o">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" id="Ej5-Ct-MX2" userLabel="Link Group">
+                                            <items>
+                                                <separator alignment="left" id="0o4-0c-pi4">
+                                                    <color key="color" red="0.16847138106822968" green="0.51802176237106323" blue="0.82454198598861694" alpha="1" colorSpace="calibratedRGB"/>
+                                                </separator>
+                                                <label alignment="left" verticalAlignment="center" text="0" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="7zn-eK-o4B">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                </label>
+                                                <separator alignment="left" id="IsK-7X-kxA">
+                                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </separator>
+                                                <label alignment="left" verticalAlignment="center" text="Links" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="th5-C6-A5d">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" verticalAlignment="bottom" hidden="YES" layout="vertical" spacing="2" id="6Lm-qZ-ep8" userLabel="Static Message Group">
+                                    <items>
+                                        <label width="1" alignment="left" text="Yo" textAlignment="left" id="c19-W5-I2E">
+                                            <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                        </label>
+                                        <label width="1" alignment="center" verticalAlignment="center" text="Please Login" textAlignment="left" numberOfLines="0" id="9Bl-xe-pG9">
+                                            <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="linkYoCount" destination="7zn-eK-o4B" id="rJs-ux-agX"/>
+                        <outlet property="linkYoDesciption" destination="th5-C6-A5d" id="W2J-bG-EkW"/>
+                        <outlet property="linkYoGroup" destination="Ej5-Ct-MX2" id="g8D-Sw-E2Y"/>
+                        <outlet property="locationYoCount" destination="zQo-Mu-nZE" id="wD0-G7-rQQ"/>
+                        <outlet property="locationYoCountDescription" destination="5oQ-5J-a1H" id="hon-4U-Re3"/>
+                        <outlet property="locationYoGroup" destination="8ah-fr-lZX" id="DSq-aJ-RUY"/>
+                        <outlet property="newYoCountDescriptionLabel" destination="ySZ-bg-T1o" id="UAJ-gl-PsX"/>
+                        <outlet property="newYoCountLabel" destination="52J-YM-3kv" id="LsN-Qg-gAB"/>
+                        <outlet property="photoGroup" destination="yrg-AV-TTv" id="DRJ-2V-J5Z"/>
+                        <outlet property="photoYoCount" destination="fjB-YQ-qGv" id="C13-Nm-qIQ"/>
+                        <outlet property="photoYoCountDescription" destination="BPA-bT-R5o" id="BBZ-bL-maE"/>
+                        <outlet property="staticAlertMessageLabel" destination="9Bl-xe-pG9" id="0cg-Os-74P"/>
+                        <outlet property="staticAlertUIGroup" destination="6Lm-qZ-ep8" id="4IU-Qm-hF2"/>
+                        <outlet property="yoCountGroup" destination="S3x-2B-vPV" id="VUt-kS-T3n"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="681"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="HEr-Hn-8xW" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" id="21k-zX-QAw">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" radius="6" id="o01-vx-Wgp" userLabel="Image Group">
+                                    <items>
+                                        <imageView width="1" height="46" alignment="center" verticalAlignment="center" image="yo_icon_filled.png" contentMode="scaleAspectFit" id="zyB-69-lgb"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="IlE-cM-G7B" userLabel="Text Group">
+                                    <items>
+                                        <label width="1" widthAdjustment="-2" alignment="center" text="Yo From AINSLEYWAGON" textAlignment="center" numberOfLines="0" id="XkS-y5-khE">
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="EA4-QW-KGk">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="JfB-70-Muf">
+                        <color key="sashColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="925"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="dD0-9D-iSj">
+            <objects>
+                <notificationController id="KuP-nW-ZZp">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="A72-8a-7QV" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" id="eBx-RL-4BQ">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" radius="6" id="6Gi-De-FLu" userLabel="Image Group">
+                                    <items>
+                                        <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="location_pin_icon.png" contentMode="scaleAspectFit" id="0Ma-Vr-HAe"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="mFa-NH-k8g" userLabel="Text Group">
+                                    <items>
+                                        <label width="1" alignment="center" text="Location From OR" textAlignment="center" numberOfLines="0" id="BtF-Oh-gaG">
+                                            <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="Q1s-qz-UhK">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="location_yo" id="Jqy-XM-zzY">
+                        <color key="sashColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="BtF-Oh-gaG" id="leT-Zg-umK"/>
+                        <segue destination="nCf-SX-kpB" kind="relationship" relationship="dynamicNotificationInterface" id="Usv-mh-N3a"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1222.5"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="8Zm-4M-ULi">
+            <objects>
+                <notificationController id="aUV-Hb-wc7">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="c4r-UZ-YAn" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" id="C5q-an-oYI">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" radius="6" id="Y65-2u-YHs" userLabel="Image Group">
+                                    <items>
+                                        <imageView width="35" height="35" alignment="center" verticalAlignment="center" image="paperclip_icon.png" contentMode="scaleAspectFit" id="fUm-JT-bdS"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="S2k-BE-MIg" userLabel="Text Group">
+                                    <items>
+                                        <label width="1" alignment="center" text="Link From ROOZY" textAlignment="center" numberOfLines="0" id="eEV-Tg-9Qs">
+                                            <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="FRa-VY-QDy">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="link_yo" id="DH2-D0-yuj">
+                        <color key="sashColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="eEV-Tg-9Qs" id="Ud4-C2-gXk"/>
+                        <segue destination="Vkl-AH-SZ8" kind="relationship" relationship="dynamicNotificationInterface" id="rXc-ra-1bo"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1516"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="3Ta-a4-MJN">
+            <objects>
+                <notificationController id="Dh8-os-Ton">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="zEO-H8-3WV" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" id="gHu-PP-rTz">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" radius="6" id="3ty-FI-tO2" userLabel="Image Group">
+                                    <items>
+                                        <imageView width="1" alignment="center" verticalAlignment="center" image="photo_icon_color.png" contentMode="scaleAspectFit" id="ifw-b1-N0G"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="3Sh-Tz-Wrr" userLabel="Text Group">
+                                    <items>
+                                        <label width="1" alignment="center" text="Yo Photo from PETERREVEL" textAlignment="center" numberOfLines="0" id="jiu-gX-rId">
+                                            <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="7ck-ER-S8B">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="photo_yo" id="BnE-Ax-JJz">
+                        <color key="sashColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="jiu-gX-rId" id="260-JN-Hgi"/>
+                        <segue destination="V61-M5-DUf" kind="relationship" relationship="dynamicNotificationInterface" id="Zvr-xa-fGB"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1782"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Yo_Watch_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="5LW-Yg-N8m" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" id="hA2-4l-mJO">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" id="fXo-a5-rDJ" userLabel="Horizontal Group">
+                                    <items>
+                                        <group alignment="left" radius="12" id="Fxj-fY-zFM" userLabel="Icon Group">
+                                            <items>
+                                                <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="yo_icon_filled.png" contentMode="scaleAspectFit" id="Y60-dj-X2k"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" widthAdjustment="-42" alignment="left" layout="vertical" spacing="0.0" id="maT-io-8vJ" userLabel="Text Group">
+                                            <items>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="from" textAlignment="left" numberOfLines="0" id="xKp-PJ-59G">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="PETERREVEL" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="Vkh-WG-vHJ">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="Wd1-a6-DPw">
+                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="usernameLabel" destination="Vkh-WG-vHJ" id="l0H-WJ-BVX"/>
+                        <outlet property="yoDescriptionLabel" destination="xKp-PJ-59G" id="TyI-X6-GYe"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="535" y="925"/>
+        </scene>
+        <!--Location Notification Controller-->
+        <scene sceneID="QE9-Jm-7vh">
+            <objects>
+                <controller id="nCf-SX-kpB" customClass="LocationNotificationController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" radius="6" spacing="5" id="2Aj-jz-fEK" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" hidden="YES" id="sKf-ri-FCT">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <map width="1" height="140" alignment="center" id="TH2-sx-qym">
+                                    <variation key="device=watch38mm" height="130"/>
+                                </map>
+                                <separator alignment="left" id="I2a-Kq-RG0">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" id="TpO-e1-mAq" userLabel="Horizontal Group">
+                                    <items>
+                                        <group alignment="left" radius="12" id="Gmp-Kx-8xp" userLabel="Icon Group">
+                                            <items>
+                                                <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="location_pin_icon.png" contentMode="scaleAspectFit" id="Rqc-yu-Kth"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" widthAdjustment="-42" alignment="left" layout="vertical" spacing="0.0" id="LOZ-zP-szi" userLabel="Text Group">
+                                            <items>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="Location from" textAlignment="left" numberOfLines="0" id="hSX-PF-ppB">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="PETERREVEL" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="4J8-XS-d8X">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="Wse-Jc-LNm">
+                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="map" destination="TH2-sx-qym" id="YU3-UG-bQQ"/>
+                        <outlet property="usernameLabel" destination="4J8-XS-d8X" id="hi2-ir-hLw"/>
+                        <outlet property="yoDescriptionLabel" destination="hSX-PF-ppB" id="egF-Mf-Lr1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="535" y="1222.5"/>
+        </scene>
+        <!--Photo Notification Controller-->
+        <scene sceneID="NuJ-Pj-evb">
+            <objects>
+                <controller id="V61-M5-DUf" customClass="PhotoNotificationController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="cEf-mQ-aQD" userLabel="Content Group">
+                            <items>
+                                <imageView width="1" alignment="left" hidden="YES" id="C7o-G9-xjc"/>
+                                <separator alignment="left" id="Vme-cb-Zp5">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" id="sfP-VY-sEo" userLabel="Horizontal Group">
+                                    <items>
+                                        <group alignment="left" radius="12" id="K8P-lI-UNl" userLabel="Icon Group">
+                                            <items>
+                                                <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="photo_icon_color.png" contentMode="scaleAspectFit" id="Kmx-YS-GHp"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" widthAdjustment="-42" alignment="left" layout="vertical" spacing="0.0" id="UHS-go-QeO" userLabel="Text Group">
+                                            <items>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="Photo from" textAlignment="left" numberOfLines="0" id="nUR-Ba-y5Q">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="PETERREVEL" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="WRQ-sM-vKx">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="4ar-KH-rRC">
+                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="imageContainer" destination="C7o-G9-xjc" id="TbD-tk-tlg"/>
+                        <outlet property="usernameLabel" destination="WRQ-sM-vKx" id="PM7-z7-13B"/>
+                        <outlet property="yoDescriptionLabel" destination="nUR-Ba-y5Q" id="tRz-bN-SsV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="535" y="1781.5"/>
+        </scene>
+        <!--Link Notification Controller-->
+        <scene sceneID="Dua-2a-sh0">
+            <objects>
+                <controller id="Vkl-AH-SZ8" customClass="LinkNotificationController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="sey-1X-AGa" userLabel="Content Group">
+                            <items>
+                                <imageView width="1" alignment="left" hidden="YES" id="FMP-1A-RlR"/>
+                                <separator alignment="left" id="TLL-kp-47u">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" id="Xy0-jo-ux0" userLabel="Horizontal Group">
+                                    <items>
+                                        <group alignment="left" radius="12" id="vdU-YI-jpu" userLabel="Icon Group">
+                                            <items>
+                                                <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="paperclip_icon.png" contentMode="scaleAspectFit" id="bOG-cZ-gcr"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" widthAdjustment="-42" alignment="left" layout="vertical" spacing="0.0" id="3bd-iq-kqn" userLabel="Text Group">
+                                            <items>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="Link from" textAlignment="left" numberOfLines="0" id="Rx0-i5-icd">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="PETERREVEL" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="LYf-fO-04R">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="TMP-EG-CSX">
+                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="imageContainer" destination="FMP-1A-RlR" id="Dgx-pR-qay"/>
+                        <outlet property="usernameLabel" destination="LYf-fO-04R" id="1lz-Yt-i4u"/>
+                        <outlet property="yoDescriptionLabel" destination="Rx0-i5-icd" id="8uB-oI-UZU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="535" y="1515.5"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="NNI-Cx-DEX">
+            <objects>
+                <notificationController id="Xax-QB-xna">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="aOz-0Q-yBt" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" id="BHr-dH-kdn">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" radius="6" id="8A4-8d-sHE" userLabel="Image Group">
+                                    <items>
+                                        <imageView width="1" height="46" alignment="center" verticalAlignment="center" image="yo_icon_filled.png" contentMode="scaleAspectFit" id="bk4-ah-t5X"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="Gc7-x5-IQ8" userLabel="Text Group">
+                                    <items>
+                                        <label width="1" widthAdjustment="-2" alignment="center" text="Yo From AINSLEYWAGON" textAlignment="center" numberOfLines="0" id="4yg-Qf-9il">
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="Rhf-9s-vja">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="default_yo_service" id="W9F-z6-Qf6">
+                        <color key="sashColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="4yg-Qf-9il" id="l5J-3g-xYz"/>
+                        <segue destination="ZOW-9D-dCN" kind="relationship" relationship="dynamicNotificationInterface" id="amq-1M-AT0"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="841" y="924.5"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="pMy-AG-zfL">
+            <objects>
+                <notificationController id="0iC-dy-Tcm">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="2Kc-Wt-RV4" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" id="0c9-ro-GdJ">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" radius="6" id="WjU-XT-a5a" userLabel="Image Group">
+                                    <items>
+                                        <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="location_pin_icon.png" contentMode="scaleAspectFit" id="ubA-XB-hnn"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="hLy-9a-NeF" userLabel="Text Group">
+                                    <items>
+                                        <label width="1" alignment="center" text="Location From OR" textAlignment="center" numberOfLines="0" id="Pen-fh-9CQ">
+                                            <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="DGY-aU-8Sx">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="location_yo_service" id="lcm-9m-yA6">
+                        <color key="sashColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="Pen-fh-9CQ" id="FHB-8b-c7z"/>
+                        <segue destination="al1-aw-2Hl" kind="relationship" relationship="dynamicNotificationInterface" id="u5n-xs-6C9"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="841" y="1222"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="MpB-cx-b7o">
+            <objects>
+                <notificationController id="ytl-GQ-UFi">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="6Gv-AQ-9XX" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" id="Txc-6g-XEF">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" radius="6" id="dmS-9k-XRd" userLabel="Image Group">
+                                    <items>
+                                        <imageView width="1" alignment="center" verticalAlignment="center" image="photo_icon_color.png" contentMode="scaleAspectFit" id="cVe-gV-lRu"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="9UL-U0-EOM" userLabel="Text Group">
+                                    <items>
+                                        <label width="1" alignment="center" text="Yo Photo from PETERREVEL" textAlignment="center" numberOfLines="0" id="jvi-rF-xr9">
+                                            <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="q5B-8S-G8a">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="photo_yo_service" id="XIl-uH-xeL">
+                        <color key="sashColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="jvi-rF-xr9" id="mcH-eW-ZLf"/>
+                        <segue destination="Pcd-Te-jQE" kind="relationship" relationship="dynamicNotificationInterface" id="WK1-OS-oyR"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="841" y="1782"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Uyh-V7-A7Q">
+            <objects>
+                <controller id="ZOW-9D-dCN" customClass="NotificationController" customModule="Yo_Watch_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="jDA-rO-rVh" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" id="7mm-8Z-T9w">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" id="48u-Kg-ARP" userLabel="Horizontal Group">
+                                    <items>
+                                        <group alignment="left" radius="12" id="jPh-f0-Gpv" userLabel="Icon Group">
+                                            <items>
+                                                <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="yo_icon_filled.png" contentMode="scaleAspectFit" id="Tqi-LT-q5Y"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" widthAdjustment="-42" alignment="left" layout="vertical" spacing="0.0" id="AIu-5F-V3h" userLabel="Text Group">
+                                            <items>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="from" textAlignment="left" numberOfLines="0" id="saG-Oa-PUb">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="PETERREVEL" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="zZ0-Q5-FGM">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="1HK-1u-QCt">
+                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="usernameLabel" destination="zZ0-Q5-FGM" id="9vJ-ev-oYc"/>
+                        <outlet property="yoDescriptionLabel" destination="saG-Oa-PUb" id="NE9-Sc-EZy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1141" y="925"/>
+        </scene>
+        <!--Location Notification Controller-->
+        <scene sceneID="18J-Dn-uwv">
+            <objects>
+                <controller id="al1-aw-2Hl" customClass="LocationNotificationController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" radius="6" spacing="5" id="RcK-Lc-i0Z" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" hidden="YES" id="vx1-83-2Od">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <map width="1" height="140" alignment="center" id="9lO-ch-Vgu">
+                                    <variation key="device=watch38mm" height="130"/>
+                                </map>
+                                <separator alignment="left" id="0X8-Ff-i07">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" id="zXh-1f-JUb" userLabel="Horizontal Group">
+                                    <items>
+                                        <group alignment="left" radius="12" id="mdd-WE-J3r" userLabel="Icon Group">
+                                            <items>
+                                                <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="location_pin_icon.png" contentMode="scaleAspectFit" id="NOp-hf-2cb"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" widthAdjustment="-42" alignment="left" layout="vertical" spacing="0.0" id="9uF-s5-2Hk" userLabel="Text Group">
+                                            <items>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="Location from" textAlignment="left" numberOfLines="0" id="Nug-LR-Jzm">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="PETERREVEL" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="jKQ-OR-evv">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="OXZ-Aj-Ot3">
+                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="map" destination="9lO-ch-Vgu" id="66t-6Y-We7"/>
+                        <outlet property="usernameLabel" destination="jKQ-OR-evv" id="Kve-5U-JfG"/>
+                        <outlet property="yoDescriptionLabel" destination="Nug-LR-Jzm" id="QU6-zi-RzW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1141" y="1222.25"/>
+        </scene>
+        <!--Photo Notification Controller-->
+        <scene sceneID="C9E-a5-MJE">
+            <objects>
+                <controller id="Pcd-Te-jQE" customClass="PhotoNotificationController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="EeN-ei-rSL" userLabel="Content Group">
+                            <items>
+                                <imageView width="1" alignment="left" hidden="YES" id="frI-32-z27"/>
+                                <separator alignment="left" id="8eZ-rS-36z">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" id="SMW-lr-P4b" userLabel="Horizontal Group">
+                                    <items>
+                                        <group alignment="left" radius="12" id="UNr-vZ-FO0" userLabel="Icon Group">
+                                            <items>
+                                                <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="photo_icon_color.png" contentMode="scaleAspectFit" id="JEO-yc-ocN"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" widthAdjustment="-42" alignment="left" layout="vertical" spacing="0.0" id="A2R-Dr-3IJ" userLabel="Text Group">
+                                            <items>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="Photo from" textAlignment="left" numberOfLines="0" id="Cs8-UZ-VUR">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="PETERREVEL" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="g1d-XY-dDS">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="tq8-Ag-pz5">
+                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="imageContainer" destination="frI-32-z27" id="5fM-5r-cam"/>
+                        <outlet property="usernameLabel" destination="g1d-XY-dDS" id="0D8-F5-Mi0"/>
+                        <outlet property="yoDescriptionLabel" destination="Cs8-UZ-VUR" id="AlN-7H-MP3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1141" y="1781"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="eTy-Dw-NWc">
+            <objects>
+                <notificationController id="5Xx-h3-tHI">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="hjo-z6-CTR" userLabel="Content Group">
+                            <items>
+                                <separator alignment="left" id="ggp-bC-JhB">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" radius="6" id="4hU-D2-oZR" userLabel="Image Group">
+                                    <items>
+                                        <imageView width="35" height="35" alignment="center" verticalAlignment="center" image="paperclip_icon.png" contentMode="scaleAspectFit" id="d4t-SL-Suo"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="rH1-lA-OWf" userLabel="Text Group">
+                                    <items>
+                                        <label width="1" alignment="center" text="Link From ROOZY" textAlignment="center" numberOfLines="0" id="lNe-X0-J36">
+                                            <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="eQl-Pr-VqL">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="link_yo_service" id="fIe-yN-VYL">
+                        <color key="sashColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="lNe-X0-J36" id="HUI-IR-b3b"/>
+                        <segue destination="vyG-2E-fsi" kind="relationship" relationship="dynamicNotificationInterface" id="NOF-sw-pEh"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="841" y="1517"/>
+        </scene>
+        <!--Link Notification Controller-->
+        <scene sceneID="vy9-XX-sP4">
+            <objects>
+                <controller id="vyG-2E-fsi" customClass="LinkNotificationController" customModule="Yo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="5" id="C6z-i7-Cfh" userLabel="Content Group">
+                            <items>
+                                <imageView width="1" alignment="left" hidden="YES" id="ptP-Hi-m9M"/>
+                                <separator alignment="left" id="aHt-Yc-iTv">
+                                    <color key="color" red="0.5321432948" green="0.25046047570000002" blue="0.65504401919999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" id="cd2-Fp-jve" userLabel="Horizontal Group">
+                                    <items>
+                                        <group alignment="left" radius="12" id="9r0-BC-bvn" userLabel="Icon Group">
+                                            <items>
+                                                <imageView width="38" height="38" alignment="center" verticalAlignment="center" image="paperclip_icon.png" contentMode="scaleAspectFit" id="4Kf-oo-q1X"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" widthAdjustment="-42" alignment="left" layout="vertical" spacing="0.0" id="Y43-T1-Lju" userLabel="Text Group">
+                                            <items>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="Link from" textAlignment="left" numberOfLines="0" id="2Hx-zY-ISe">
+                                                    <fontDescription key="font" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                                <label width="1" widthAdjustment="-4" alignment="center" text="PETERREVEL" textAlignment="left" minimumScaleFactor="0.10000000000000001" id="aF9-DA-ckj">
+                                                    <fontDescription key="font" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="JBP-HH-fEp">
+                                    <color key="color" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                            <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="imageContainer" destination="ptP-Hi-m9M" id="cNW-Qc-cav"/>
+                        <outlet property="usernameLabel" destination="aF9-DA-ckj" id="eQ1-tw-9M6"/>
+                        <outlet property="yoDescriptionLabel" destination="2Hx-zY-ISe" id="lqA-q6-MFh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1141" y="1516"/>
+        </scene>
+    </scenes>
+</document>

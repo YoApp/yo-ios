@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E36b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="YoBlockedUserCell" id="t8X-yV-ZaP" customClass="YoBlockedUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9Y-DS-zlf" userLabel="CopyView">
+                        <rect key="frame" x="24" y="8" width="227" height="53"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Arbel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2u-Op-cKS" userLabel="Title Label" customClass="YoLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="227" height="53"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W2u-Op-cKS" firstAttribute="top" secondItem="o9Y-DS-zlf" secondAttribute="top" id="1LF-n7-cYf"/>
+                            <constraint firstItem="W2u-Op-cKS" firstAttribute="left" secondItem="o9Y-DS-zlf" secondAttribute="left" id="4Ra-qJ-OW8"/>
+                            <constraint firstAttribute="right" secondItem="W2u-Op-cKS" secondAttribute="right" id="GVn-GG-ukx"/>
+                            <constraint firstAttribute="bottom" secondItem="W2u-Op-cKS" secondAttribute="bottom" id="g1P-Va-8FD"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUP-Oe-s2h" userLabel="checkBocView">
+                        <rect key="frame" x="259" y="16" width="37" height="37"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_square" translatesAutoresizingMaskIntoConstraints="NO" id="5E4-dm-E4Z">
+                                <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="pOn-s9-zr5">
+                                <rect key="frame" x="8" y="8" width="21" height="21"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5E4-dm-E4Z" secondAttribute="bottom" id="5xS-aj-05S"/>
+                            <constraint firstAttribute="right" secondItem="5E4-dm-E4Z" secondAttribute="right" id="9w1-bG-xbv"/>
+                            <constraint firstItem="pOn-s9-zr5" firstAttribute="top" secondItem="eUP-Oe-s2h" secondAttribute="top" constant="8" id="RcS-NU-C9f"/>
+                            <constraint firstAttribute="width" secondItem="eUP-Oe-s2h" secondAttribute="height" multiplier="1:1" id="Xd0-WC-pdr"/>
+                            <constraint firstItem="5E4-dm-E4Z" firstAttribute="top" secondItem="eUP-Oe-s2h" secondAttribute="top" id="Y9Y-2E-KeS"/>
+                            <constraint firstItem="pOn-s9-zr5" firstAttribute="left" secondItem="eUP-Oe-s2h" secondAttribute="left" constant="8" id="ilp-eo-SXa"/>
+                            <constraint firstItem="5E4-dm-E4Z" firstAttribute="left" secondItem="eUP-Oe-s2h" secondAttribute="left" id="jVP-EW-afd"/>
+                            <constraint firstAttribute="right" secondItem="pOn-s9-zr5" secondAttribute="right" constant="8" id="kSi-0U-ihA"/>
+                            <constraint firstAttribute="bottom" secondItem="pOn-s9-zr5" secondAttribute="bottom" constant="8" id="zRL-18-VmQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.16847138110000001" green="0.51802176239999997" blue="0.82454198599999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="eUP-Oe-s2h" firstAttribute="top" secondItem="t8X-yV-ZaP" secondAttribute="top" constant="16" id="8qn-7j-b6i"/>
+                <constraint firstAttribute="right" secondItem="eUP-Oe-s2h" secondAttribute="right" constant="24" id="9Qn-sW-gYk"/>
+                <constraint firstItem="eUP-Oe-s2h" firstAttribute="left" secondItem="o9Y-DS-zlf" secondAttribute="right" constant="8" id="HwT-2p-f2E"/>
+                <constraint firstItem="eUP-Oe-s2h" firstAttribute="width" secondItem="eUP-Oe-s2h" secondAttribute="height" multiplier="1:1" id="P3N-wd-yAh"/>
+                <constraint firstAttribute="bottom" secondItem="eUP-Oe-s2h" secondAttribute="bottom" constant="16" id="ZQA-AB-MCI"/>
+                <constraint firstAttribute="bottom" secondItem="o9Y-DS-zlf" secondAttribute="bottom" constant="8" id="bNK-fj-R6M"/>
+                <constraint firstItem="o9Y-DS-zlf" firstAttribute="top" secondItem="t8X-yV-ZaP" secondAttribute="top" constant="8" id="f8V-Bb-nx5"/>
+                <constraint firstItem="o9Y-DS-zlf" firstAttribute="left" secondItem="t8X-yV-ZaP" secondAttribute="left" constant="24" id="tU1-ML-Lxq"/>
+            </constraints>
+            <size key="customSize" width="282" height="89"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="P3N-wd-yAh"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="checkMarkImageView" destination="pOn-s9-zr5" id="XO0-SO-0W2"/>
+                <outlet property="nameLabel" destination="W2u-Op-cKS" id="C4S-CC-2y7"/>
+            </connections>
+            <point key="canvasLocation" x="443" y="513.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="check_mark" width="32" height="23"/>
+        <image name="checkbox_square" width="60" height="60"/>
+    </resources>
+</document>

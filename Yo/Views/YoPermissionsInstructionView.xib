@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YoPermissionsInstructionView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="238"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pnz-pj-E1I">
+                    <rect key="frame" x="276" y="24" width="49" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="KWf-6T-CJF"/>
+                        <constraint firstAttribute="width" secondItem="pnz-pj-E1I" secondAttribute="height" multiplier="1:1" id="f6i-4L-54e"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yo all your friends by allowing Yo access to your contacts." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi2-Hw-HBr" customClass="YoLabel">
+                    <rect key="frame" x="16" y="83" width="568" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBD-Za-Afm" customClass="YoButton">
+                    <rect key="frame" x="16" y="176" width="568" height="44"/>
+                    <color key="backgroundColor" red="0.16847138106822968" green="0.51802176237106323" blue="0.82454198598861694" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Wwa-tc-a37"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                    <state key="normal" title="Tap Allow Access">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enable_contacts_instruction" translatesAutoresizingMaskIntoConstraints="NO" id="VCU-cf-eEQ">
+                    <rect key="frame" x="32" y="118" width="536" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="LSZ-yi-DYF"/>
+                        <constraint firstAttribute="width" secondItem="VCU-cf-eEQ" secondAttribute="height" multiplier="41:6" id="bU7-IS-Q0F"/>
+                        <constraint firstAttribute="height" constant="44" id="whr-Qm-7ic"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="LSZ-yi-DYF"/>
+                            <exclude reference="bU7-IS-Q0F"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.22745367884635925" green="0.3019564151763916" blue="0.38285347819328308" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="VCU-cf-eEQ" secondAttribute="centerY" constant="-26" id="4ca-oZ-8J1"/>
+                <constraint firstAttribute="centerX" secondItem="pnz-pj-E1I" secondAttribute="centerX" id="4fr-mq-bTJ"/>
+                <constraint firstItem="xi2-Hw-HBr" firstAttribute="top" secondItem="pnz-pj-E1I" secondAttribute="bottom" constant="10" id="5Wp-Hn-fen"/>
+                <constraint firstAttribute="right" secondItem="VCU-cf-eEQ" secondAttribute="right" constant="32" id="7ce-3u-ZeT"/>
+                <constraint firstItem="RBD-Za-Afm" firstAttribute="top" secondItem="VCU-cf-eEQ" secondAttribute="bottom" constant="14" id="9T1-wa-rXh"/>
+                <constraint firstItem="RBD-Za-Afm" firstAttribute="left" secondItem="iN0-l3-epB" secondAttribute="left" constant="16" id="Hdh-q9-d3z"/>
+                <constraint firstItem="pnz-pj-E1I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="VKR-0j-k7I"/>
+                <constraint firstItem="VCU-cf-eEQ" firstAttribute="top" secondItem="xi2-Hw-HBr" secondAttribute="bottom" constant="14" id="Yrf-tX-vfb"/>
+                <constraint firstAttribute="right" secondItem="xi2-Hw-HBr" secondAttribute="right" constant="16" id="ZLU-cX-40t"/>
+                <constraint firstItem="xi2-Hw-HBr" firstAttribute="left" secondItem="iN0-l3-epB" secondAttribute="left" constant="16" id="hk4-KU-78p"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RBD-Za-Afm" secondAttribute="bottom" constant="14" id="jXZ-2V-eoB"/>
+                <constraint firstAttribute="right" secondItem="RBD-Za-Afm" secondAttribute="right" constant="16" id="uSQ-LU-kfj"/>
+                <constraint firstItem="xi2-Hw-HBr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="vxm-Gw-CwS"/>
+                <constraint firstItem="VCU-cf-eEQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="xFv-B8-ZaP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="vxm-Gw-CwS"/>
+                    <exclude reference="4ca-oZ-8J1"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="actionButton" destination="RBD-Za-Afm" id="7j9-zy-zYm"/>
+                <outlet property="instructionImageView" destination="VCU-cf-eEQ" id="o21-5B-11Z"/>
+                <outlet property="settingsAppIconImageView" destination="pnz-pj-E1I" id="wVa-XT-J6d"/>
+                <outlet property="textLabel" destination="xi2-Hw-HBr" id="uFR-HM-gJc"/>
+            </connections>
+            <point key="canvasLocation" x="536" y="191"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="enable_contacts_instruction" width="750" height="86"/>
+        <image name="settings_app_icon" width="512" height="512"/>
+    </resources>
+</document>

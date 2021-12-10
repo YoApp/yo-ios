@@ -1,0 +1,38 @@
+//
+// Prefix header for all source files of the 'Yo' target in the 'Yo' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_3
+#warning "This project uses features only available in iPhone SDK 4.3 and later."
+#endif
+
+#ifndef IS_APP_EXTENSION
+#import "YoiOSAssistant.h"
+#import "YoABTestingFrameWork.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "YoLocalPushNotificationAssistant.h"
+#import <AFNetworking/AFNetworking.h>
+#import "UIImageView+AFNetworking.h"
+#import "UIActionSheet+Blocks.h"
+#import "UIAlertView+Blocks.h"
+#import <Optimizely/Optimizely.h>
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#import "UIView_Extensions.h"
+#import "YOConstants.h"
+#import "YOUDID.h"
+#import "DDLog.h"
+#import "YOMacros.h"
+#import "Yo_Extensions.h"
+#import "YoApp.h"
+#import "YoAlertManager.h"
+#import "YoAnalytics.h"
+#import "YoActivityManager.h"
+#import "YoButton.h"
+#import "YoDefines.h"
+#endif

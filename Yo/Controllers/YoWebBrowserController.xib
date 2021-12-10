@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+            <string>Montserrat-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YoWebBrowserController">
+            <connections>
+                <outlet property="activityIndicator" destination="HgJ-82-XBh" id="CB3-2Z-XzW"/>
+                <outlet property="backButton" destination="zEe-MH-grL" id="9bP-Os-7s0"/>
+                <outlet property="buttonWhichCoversShareOptions" destination="eiG-jk-UZl" id="0BC-Rt-Nc8"/>
+                <outlet property="forwardButton" destination="p1F-vr-21h" id="r0N-CO-Wit"/>
+                <outlet property="reloadButton" destination="LZz-Ay-J1A" id="a1R-hs-0Gf"/>
+                <outlet property="titleLabel" destination="rOj-Qb-ZJ6" id="Tqj-wV-QzO"/>
+                <outlet property="topContainerView" destination="8u5-fy-Wou" id="4KP-NG-BcI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webContainerView" destination="scE-2p-s0J" id="g1Z-da-UDY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8u5-fy-Wou" userLabel="topViewContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="rOj-Qb-ZJ6">
+                            <rect key="frame" x="12" y="8" width="500" height="27"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4y4-kb-tIg" userLabel="doneButton">
+                            <rect key="frame" x="556" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="4y4-kb-tIg" secondAttribute="height" multiplier="23:15" id="1Pc-2w-unw"/>
+                                <constraint firstAttribute="width" secondItem="4y4-kb-tIg" secondAttribute="height" multiplier="1:1" id="sV8-Dy-BWE"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="10" minY="14" maxX="18" maxY="14"/>
+                            <state key="normal" image="dismiss_image">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="1Pc-2w-unw"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="-1" eventType="touchUpInside" id="84g-Ou-lsi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZz-Ay-J1A" userLabel="reloadButton">
+                            <rect key="frame" x="512" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="LZz-Ay-J1A" secondAttribute="height" multiplier="1:1" id="6BB-oP-1AN"/>
+                                <constraint firstAttribute="width" secondItem="LZz-Ay-J1A" secondAttribute="height" multiplier="23:15" id="zdb-xk-AlJ"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="16" minY="14" maxX="12" maxY="14"/>
+                            <state key="normal" image="YoRefreshSquare.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="zdb-xk-AlJ"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="reloadButtonPressed:" destination="-1" eventType="touchUpInside" id="U0x-pZ-MeP"/>
+                            </connections>
+                        </button>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="HgJ-82-XBh">
+                            <rect key="frame" x="526" y="12" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.53214329481124878" green="0.25046047568321228" blue="0.65504401922225952" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="4y4-kb-tIg" firstAttribute="bottom" secondItem="8u5-fy-Wou" secondAttribute="bottom" id="5sh-hd-rF3"/>
+                        <constraint firstItem="rOj-Qb-ZJ6" firstAttribute="left" secondItem="8u5-fy-Wou" secondAttribute="left" constant="12" id="6Yy-X9-kFN"/>
+                        <constraint firstItem="LZz-Ay-J1A" firstAttribute="width" secondItem="LZz-Ay-J1A" secondAttribute="height" multiplier="1:1" id="6fm-Ad-fbB"/>
+                        <constraint firstItem="LZz-Ay-J1A" firstAttribute="bottom" secondItem="8u5-fy-Wou" secondAttribute="bottom" id="6h1-sb-N7I"/>
+                        <constraint firstItem="4y4-kb-tIg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8u5-fy-Wou" secondAttribute="top" constant="8" id="9yf-EH-329"/>
+                        <constraint firstItem="4y4-kb-tIg" firstAttribute="top" secondItem="8u5-fy-Wou" secondAttribute="top" constant="8" id="B5x-hi-A4x"/>
+                        <constraint firstItem="LZz-Ay-J1A" firstAttribute="right" secondItem="4y4-kb-tIg" secondAttribute="left" id="En2-g4-L2A"/>
+                        <constraint firstItem="LZz-Ay-J1A" firstAttribute="left" secondItem="rOj-Qb-ZJ6" secondAttribute="right" id="FCw-G6-Pir"/>
+                        <constraint firstAttribute="trailing" secondItem="4y4-kb-tIg" secondAttribute="trailing" constant="8" id="GZf-pR-8Pf"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4y4-kb-tIg" secondAttribute="trailing" constant="8" id="I2d-WV-3nr"/>
+                        <constraint firstAttribute="bottom" secondItem="4y4-kb-tIg" secondAttribute="bottom" constant="8" id="IMQ-Nw-O8C"/>
+                        <constraint firstItem="4y4-kb-tIg" firstAttribute="top" secondItem="8u5-fy-Wou" secondAttribute="top" id="IW1-LQ-kbE"/>
+                        <constraint firstItem="rOj-Qb-ZJ6" firstAttribute="top" secondItem="8u5-fy-Wou" secondAttribute="top" constant="8" id="Mvv-me-J8y"/>
+                        <constraint firstItem="HgJ-82-XBh" firstAttribute="centerY" secondItem="LZz-Ay-J1A" secondAttribute="centerY" id="PVz-JC-1xL"/>
+                        <constraint firstItem="HgJ-82-XBh" firstAttribute="centerX" secondItem="LZz-Ay-J1A" secondAttribute="centerX" constant="2" id="RHS-LZ-72R"/>
+                        <constraint firstItem="4y4-kb-tIg" firstAttribute="right" secondItem="8u5-fy-Wou" secondAttribute="right" id="Wuc-b6-2tQ"/>
+                        <constraint firstItem="LZz-Ay-J1A" firstAttribute="top" secondItem="8u5-fy-Wou" secondAttribute="top" id="XE2-Mx-VNy"/>
+                        <constraint firstAttribute="bottom" secondItem="rOj-Qb-ZJ6" secondAttribute="bottom" constant="9" id="fs8-xi-ac4"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4y4-kb-tIg" secondAttribute="bottom" constant="8" id="hm4-b2-lNM"/>
+                        <constraint firstAttribute="height" constant="44" id="jkE-Bt-ORR"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6fm-Ad-fbB"/>
+                            <exclude reference="9yf-EH-329"/>
+                            <exclude reference="B5x-hi-A4x"/>
+                            <exclude reference="GZf-pR-8Pf"/>
+                            <exclude reference="I2d-WV-3nr"/>
+                            <exclude reference="IMQ-Nw-O8C"/>
+                            <exclude reference="hm4-b2-lNM"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scE-2p-s0J" userLabel="webViewContainer">
+                    <rect key="frame" x="0.0" y="44" width="600" height="512"/>
+                    <color key="backgroundColor" red="0.53214329481124878" green="0.25046047568321228" blue="0.65504401922225952" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufM-8U-WyZ" userLabel="bottomViewContainer">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEe-MH-grL">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <color key="backgroundColor" red="0.12324673682451248" green="0.69430834054946899" blue="0.54211139678955078" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="zEe-MH-grL" secondAttribute="height" multiplier="1:1" id="jb8-ka-agC"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal" image="browser_left_navigation_icon">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="VIB-VW-djU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1F-vr-21h">
+                            <rect key="frame" x="44" y="0.0" width="44" height="44"/>
+                            <color key="backgroundColor" red="0.17358614504337311" green="0.77385067939758301" blue="0.36822772026062012" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="p1F-vr-21h" secondAttribute="height" multiplier="1:1" id="KoA-wX-pBd"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal" image="browser_right_navigation_icon">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="forwardButtonTapped:" destination="-1" eventType="touchUpInside" id="RB8-24-AM4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csA-P7-qxG">
+                            <rect key="frame" x="344" y="0.0" width="256" height="44"/>
+                            <color key="backgroundColor" red="0.12941176469999999" green="0.72941176470000002" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="csA-P7-qxG" secondAttribute="height" multiplier="4:1" id="Fh6-Pp-31S"/>
+                                <constraint firstAttribute="width" constant="240" id="tAB-Xk-NL7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                            <state key="normal" title="Yo This">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Fh6-Pp-31S"/>
+                                    <exclude reference="tAB-Xk-NL7"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="yoThisButtonTapped:" destination="-1" eventType="touchUpInside" id="Brm-to-aVk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLr-Gm-oww">
+                            <rect key="frame" x="88" y="0.0" width="256" height="44"/>
+                            <color key="backgroundColor" red="0.16847138106822968" green="0.51802176237106323" blue="0.82454198598861694" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                            <state key="normal" title="Share">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shareButtonTapped:" destination="-1" eventType="touchUpInside" id="Tcn-Wa-uT3"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiG-jk-UZl">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <color key="backgroundColor" red="0.12324673682451248" green="0.69430834054946899" blue="0.54211139678955078" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                            <state key="normal" title="Next">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="userDidPressNextButton:" destination="-1" eventType="touchUpInside" id="3hR-Vq-VPT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.53214329481124878" green="0.25046047568321228" blue="0.65504401922225952" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="csA-P7-qxG" firstAttribute="width" secondItem="KLr-Gm-oww" secondAttribute="width" id="0Fh-Ua-Vil"/>
+                        <constraint firstItem="KLr-Gm-oww" firstAttribute="top" secondItem="ufM-8U-WyZ" secondAttribute="top" id="7KZ-dD-a0J"/>
+                        <constraint firstAttribute="bottom" secondItem="eiG-jk-UZl" secondAttribute="bottom" id="BVa-QN-96y"/>
+                        <constraint firstItem="zEe-MH-grL" firstAttribute="right" secondItem="p1F-vr-21h" secondAttribute="left" id="FHo-8e-emw"/>
+                        <constraint firstItem="KLr-Gm-oww" firstAttribute="right" secondItem="csA-P7-qxG" secondAttribute="left" id="Hhe-d5-FLs"/>
+                        <constraint firstItem="csA-P7-qxG" firstAttribute="top" secondItem="ufM-8U-WyZ" secondAttribute="top" id="Ir8-FJ-vIf"/>
+                        <constraint firstAttribute="height" constant="44" id="MXh-BO-nlb"/>
+                        <constraint firstAttribute="right" secondItem="eiG-jk-UZl" secondAttribute="right" id="OLN-Cp-73o"/>
+                        <constraint firstItem="zEe-MH-grL" firstAttribute="top" secondItem="ufM-8U-WyZ" secondAttribute="top" id="OdP-R5-jLO"/>
+                        <constraint firstItem="p1F-vr-21h" firstAttribute="leading" secondItem="zEe-MH-grL" secondAttribute="trailing" id="YOz-3u-syI"/>
+                        <constraint firstItem="eiG-jk-UZl" firstAttribute="left" secondItem="ufM-8U-WyZ" secondAttribute="left" id="bFL-40-2Kg"/>
+                        <constraint firstItem="p1F-vr-21h" firstAttribute="top" secondItem="ufM-8U-WyZ" secondAttribute="top" id="e47-l5-J2h"/>
+                        <constraint firstItem="KLr-Gm-oww" firstAttribute="bottom" secondItem="ufM-8U-WyZ" secondAttribute="bottom" id="eBL-Hg-yna"/>
+                        <constraint firstItem="p1F-vr-21h" firstAttribute="bottom" secondItem="ufM-8U-WyZ" secondAttribute="bottom" id="g4B-q0-2h8"/>
+                        <constraint firstItem="eiG-jk-UZl" firstAttribute="top" secondItem="ufM-8U-WyZ" secondAttribute="top" id="gok-Qb-8Y6"/>
+                        <constraint firstItem="zEe-MH-grL" firstAttribute="left" secondItem="ufM-8U-WyZ" secondAttribute="left" id="kjo-RF-70b"/>
+                        <constraint firstItem="zEe-MH-grL" firstAttribute="bottom" secondItem="ufM-8U-WyZ" secondAttribute="bottom" id="kxw-49-M7L"/>
+                        <constraint firstItem="csA-P7-qxG" firstAttribute="right" secondItem="ufM-8U-WyZ" secondAttribute="right" id="pmd-ra-RGM"/>
+                        <constraint firstItem="p1F-vr-21h" firstAttribute="right" secondItem="KLr-Gm-oww" secondAttribute="left" id="t2C-8Q-BAM"/>
+                        <constraint firstAttribute="bottom" secondItem="csA-P7-qxG" secondAttribute="bottom" id="wEy-9u-N3J"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="MXh-BO-nlb"/>
+                            <exclude reference="YOz-3u-syI"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.53214329481124878" green="0.25046047568321228" blue="0.65504401922225952" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8u5-fy-Wou" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0G9-Dv-acV"/>
+                <constraint firstItem="ufM-8U-WyZ" firstAttribute="top" secondItem="scE-2p-s0J" secondAttribute="bottom" id="AN5-We-qIQ"/>
+                <constraint firstItem="ufM-8U-WyZ" firstAttribute="left" secondItem="i5M-Pr-FkT" secondAttribute="left" id="PKm-4p-HiZ"/>
+                <constraint firstItem="8u5-fy-Wou" firstAttribute="right" secondItem="i5M-Pr-FkT" secondAttribute="right" id="RIW-Zc-nPV"/>
+                <constraint firstItem="scE-2p-s0J" firstAttribute="right" secondItem="i5M-Pr-FkT" secondAttribute="right" id="ZBh-iX-Ran"/>
+                <constraint firstItem="scE-2p-s0J" firstAttribute="top" secondItem="8u5-fy-Wou" secondAttribute="bottom" id="gEF-xS-O4v"/>
+                <constraint firstItem="8u5-fy-Wou" firstAttribute="left" secondItem="i5M-Pr-FkT" secondAttribute="left" id="nBC-Go-bbs"/>
+                <constraint firstAttribute="bottom" secondItem="ufM-8U-WyZ" secondAttribute="bottom" id="qvg-bf-rPn"/>
+                <constraint firstItem="ufM-8U-WyZ" firstAttribute="height" secondItem="8u5-fy-Wou" secondAttribute="height" id="r5M-qW-Rzt"/>
+                <constraint firstItem="scE-2p-s0J" firstAttribute="left" secondItem="i5M-Pr-FkT" secondAttribute="left" id="svF-DP-oJ7"/>
+                <constraint firstItem="ufM-8U-WyZ" firstAttribute="right" secondItem="i5M-Pr-FkT" secondAttribute="right" id="yuS-nM-vMP"/>
+            </constraints>
+            <point key="canvasLocation" x="427" y="314"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="YoRefreshSquare.png" width="750" height="750"/>
+        <image name="browser_left_navigation_icon" width="18" height="30"/>
+        <image name="browser_right_navigation_icon" width="19" height="31"/>
+        <image name="dismiss_image" width="31" height="31"/>
+    </resources>
+</document>

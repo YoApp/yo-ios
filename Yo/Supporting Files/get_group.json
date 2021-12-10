@@ -1,0 +1,36 @@
+{
+	"type": "group",
+	"id": "54d5594c3ae74032e2d87872",
+	"name": "Yo Team",
+	"members": [
+		{
+			"type": "user",
+			"id": "54d5594c3ae74032e2d87879",
+			"name": "John A.",
+			"username": "johnappleseed",
+			"last_yo_status": "opened",
+			"last_yo_timestamp": "1431558438",
+			"last_location": "32.42452,121.53564",
+			"yo_count": 232
+		},
+		{
+			"type": "user",
+			"id": "54d5594c3ae74032e2d87871",
+			"name": "Matthew w.",
+			"username": "MATTHEWWOO",
+			"last_yo_status": "deliverd",
+			"last_yo_timestamp": "1431558432",
+			"last_location": null,
+			"yo_count": 2
+		},
+	],
+	"admins": [
+		{
+			"type": "user",
+			"id": "54d5594c3ae74032e2d87879",
+			"name": "John A.",
+			"username": "johnappleseed"
+		},
+
+	]
+}

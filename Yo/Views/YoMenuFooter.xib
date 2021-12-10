@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YoMenuFooter">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyW-5n-EVt">
+                    <rect key="frame" x="147" y="17" width="27" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="0Xo-D6-OoK"/>
+                        <constraint firstAttribute="width" constant="27" id="tWa-UA-8bz"/>
+                    </constraints>
+                    <state key="normal" image="down_arrow">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfX-2H-Ljw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="downArrowButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="PPO-ym-08R"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="JfX-2H-Ljw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BXp-ku-YvX"/>
+                <constraint firstAttribute="trailing" secondItem="JfX-2H-Ljw" secondAttribute="trailing" id="XG9-6N-zuk"/>
+                <constraint firstItem="JfX-2H-Ljw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xiw-jA-9bd"/>
+                <constraint firstAttribute="bottom" secondItem="JfX-2H-Ljw" secondAttribute="bottom" id="akb-vB-5As"/>
+                <constraint firstAttribute="centerX" secondItem="WyW-5n-EVt" secondAttribute="centerX" id="i1y-gl-eTG"/>
+                <constraint firstAttribute="centerY" secondItem="WyW-5n-EVt" secondAttribute="centerY" id="zbe-zc-bSs"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="466" y="279.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down_arrow" width="55" height="32"/>
+    </resources>
+</document>

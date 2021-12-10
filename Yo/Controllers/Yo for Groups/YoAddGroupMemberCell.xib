@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YoAddGroupMemberCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YoAddGroupMemberCell" rowHeight="69" id="KGk-i7-Jjw" customClass="YoAddGroupMemberCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6tg-oL-7kX">
+                        <rect key="frame" x="24" y="12" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="1SU-h1-cqG"/>
+                            <constraint firstAttribute="width" secondItem="6tg-oL-7kX" secondAttribute="height" multiplier="1:1" id="4yw-er-mLe"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Mvt-Vl-Eip"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="WvG-Q1-G1x"/>
+                            <constraint firstAttribute="width" constant="25" id="fci-Gz-urU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1SU-h1-cqG"/>
+                                <exclude reference="Mvt-Vl-Eip"/>
+                                <exclude reference="WvG-Q1-G1x"/>
+                                <exclude reference="fci-Gz-urU"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVv-12-eLo" userLabel="CopyView">
+                        <rect key="frame" x="84" y="21" width="189" height="27"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Arbel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJc-Ev-hg2" userLabel="Title Label" customClass="YoLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="189" height="27"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aus-po-CAe" userLabel="AdminLabel">
+                                <rect key="frame" x="0.0" y="27" width="189" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aus-po-CAe" firstAttribute="top" secondItem="FJc-Ev-hg2" secondAttribute="bottom" id="6N7-ZK-V0b"/>
+                            <constraint firstAttribute="bottom" secondItem="aus-po-CAe" secondAttribute="bottom" id="D1N-ZZ-NGE"/>
+                            <constraint firstItem="FJc-Ev-hg2" firstAttribute="left" secondItem="DVv-12-eLo" secondAttribute="left" id="OQm-kX-mXn"/>
+                            <constraint firstAttribute="right" secondItem="FJc-Ev-hg2" secondAttribute="right" id="a0D-Xf-OyL"/>
+                            <constraint firstAttribute="right" secondItem="aus-po-CAe" secondAttribute="right" id="aVI-vJ-MLj"/>
+                            <constraint firstItem="aus-po-CAe" firstAttribute="left" secondItem="DVv-12-eLo" secondAttribute="left" id="b6s-oC-VPL"/>
+                            <constraint firstItem="FJc-Ev-hg2" firstAttribute="top" secondItem="DVv-12-eLo" secondAttribute="top" id="rkd-at-Gdj"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="remove.png" translatesAutoresizingMaskIntoConstraints="NO" id="LPQ-UF-Uxp">
+                        <rect key="frame" x="281" y="0.0" width="31" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="0vK-CW-BoJ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="6tg-oL-7kX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="3wG-EG-24f"/>
+                    <constraint firstItem="DVv-12-eLo" firstAttribute="left" secondItem="6tg-oL-7kX" secondAttribute="right" constant="16" id="Lf1-lS-lKe"/>
+                    <constraint firstItem="LPQ-UF-Uxp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Owh-yq-QOs"/>
+                    <constraint firstAttribute="bottom" secondItem="6tg-oL-7kX" secondAttribute="bottom" constant="12" id="oPC-2z-dXp"/>
+                    <constraint firstAttribute="centerY" secondItem="DVv-12-eLo" secondAttribute="centerY" id="pkx-s6-p5k"/>
+                    <constraint firstItem="6tg-oL-7kX" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" constant="24" id="rzy-CJ-zZR"/>
+                    <constraint firstItem="LPQ-UF-Uxp" firstAttribute="left" secondItem="DVv-12-eLo" secondAttribute="right" constant="8" id="tsD-vq-Zrg"/>
+                    <constraint firstAttribute="right" secondItem="LPQ-UF-Uxp" secondAttribute="right" constant="8" id="vYf-c8-SZ4"/>
+                    <constraint firstAttribute="bottom" secondItem="LPQ-UF-Uxp" secondAttribute="bottom" id="yja-MG-S67"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="adminLabel" destination="aus-po-CAe" id="Gl5-7V-jhQ"/>
+                <outlet property="nameLabel" destination="FJc-Ev-hg2" id="jhP-iz-emj"/>
+                <outlet property="profileImageView" destination="6tg-oL-7kX" id="DRy-PO-ilQ"/>
+                <outlet property="removeButtonImageView" destination="LPQ-UF-Uxp" id="Dg4-cM-u2q"/>
+            </connections>
+            <point key="canvasLocation" x="234" y="366"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="remove.png" width="600" height="588"/>
+    </resources>
+</document>

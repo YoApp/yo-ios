@@ -1,0 +1,60 @@
+[
+	{
+		"type": "user",
+		"id": "54d5594c3ae74032e2d87879",
+		"name": "Or A.",
+		"username": "OR",
+		"last_yo_status": "opened",
+		"last_yo_timestamp": "1431558438",
+		"last_location": "",
+        "photo_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAADYAAAAJDRkMWNhYTViLTA3OGMtNDFmMS04MzM4LTM0M2JhYjAyNzg0MQ.jpg",
+		"yo_count": 45
+	},
+	{
+		"type": "group",
+		"id": "54d5594c3ae74032e2d87872",
+		"name": "Yo Team ✌🏻👌🏻",
+        "username": "YoTeam",
+		"members": [
+		
+		],
+		"admins": [
+
+		]
+	},
+ {
+ "type": "group",
+ "id": "54d5594c3ae74032e2d878256",
+ "name": "🏀",
+ "username": "basketball353",
+ "members": [
+ 
+ ],
+ "admins": [
+ 
+ ]
+	},
+ {
+ "type": "user",
+ "photo_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAADYAAAAJDRkMWNhYTViLTA3OGMtNDFmMS04MzM4LTM0M2JhYjAyNzg0MQ.jpg",
+ "id": "54d5594c3ae74032e2d87879",
+ "name": "Matthew W.",
+ "username": "johnappleseed",
+ "last_yo_status": "opened",
+ "last_yo_timestamp": "1431558438",
+ "last_location": "",
+ "yo_count": 45
+	},
+ {
+ "type": "group",
+ "id": "54d5594c3ae74032e2d878256",
+ "name": "🍺🍺🍺",
+ "username": "basketball353",
+ "members": [
+ 
+ ],
+ "admins": [
+ 
+ ]
+	}
+ ]

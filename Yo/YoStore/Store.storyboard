@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YOS-P3-1zM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--News-->
+        <scene sceneID="RG7-Is-6Vk">
+            <objects>
+                <viewController id="ZRo-tp-1j8" customClass="YoStoreController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jlu-Gg-6Gq"/>
+                        <viewControllerLayoutGuide type="bottom" id="OQ6-Yb-4JA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Utg-lN-kmY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uLK-HY-3JW">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZRo-tp-1j8" id="r7m-f2-WSZ"/>
+                                    <outlet property="delegate" destination="ZRo-tp-1j8" id="gNd-C0-EsO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uLK-HY-3JW" firstAttribute="left" secondItem="Utg-lN-kmY" secondAttribute="left" id="EZw-eR-EmJ"/>
+                            <constraint firstItem="uLK-HY-3JW" firstAttribute="top" secondItem="jlu-Gg-6Gq" secondAttribute="bottom" id="Gee-Lo-ky0"/>
+                            <constraint firstItem="OQ6-Yb-4JA" firstAttribute="top" secondItem="uLK-HY-3JW" secondAttribute="bottom" id="NoI-tE-W8r"/>
+                            <constraint firstItem="OQ6-Yb-4JA" firstAttribute="top" secondItem="uLK-HY-3JW" secondAttribute="bottom" id="aBh-By-IrZ"/>
+                            <constraint firstAttribute="right" secondItem="uLK-HY-3JW" secondAttribute="right" id="xqi-Ef-Srt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NoI-tE-W8r"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="News" image="yo_icon_filled" id="M92-tX-Zj0"/>
+                    <navigationItem key="navigationItem" id="DW5-Ka-qHK"/>
+                    <connections>
+                        <outlet property="tableView" destination="uLK-HY-3JW" id="lbz-JM-ch0"/>
+                        <segue destination="buO-7t-uOL" kind="show" identifier="ShowStoreItemControllerSegueID" id="A1B-rU-dFp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iyc-3E-KrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155" y="35"/>
+        </scene>
+        <!--Yo Store Item Controller-->
+        <scene sceneID="Jis-Wf-xn8">
+            <objects>
+                <viewController storyboardIdentifier="YoStoreItemControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="buO-7t-uOL" customClass="YoStoreItemController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c6z-Pn-mV9"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZIW-Lb-Yds"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zKQ-ah-xCM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rsC-iU-YeK">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7cK-Dw-0LG">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="37b-LA-NGS">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="buO-7t-uOL" id="E0c-84-qvy"/>
+                                    <outlet property="delegate" destination="buO-7t-uOL" id="uPr-k4-p4o"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rsC-iU-YeK" secondAttribute="trailing" id="Y8M-1O-IXU"/>
+                            <constraint firstItem="rsC-iU-YeK" firstAttribute="leading" secondItem="zKQ-ah-xCM" secondAttribute="leading" id="Z9U-8i-36P"/>
+                            <constraint firstItem="ZIW-Lb-Yds" firstAttribute="top" secondItem="rsC-iU-YeK" secondAttribute="bottom" id="eAD-Xa-D3L"/>
+                            <constraint firstItem="rsC-iU-YeK" firstAttribute="top" secondItem="c6z-Pn-mV9" secondAttribute="bottom" id="l1O-Ub-HMe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="rsC-iU-YeK" id="ICA-fP-lVU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCM-Rj-I9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101" y="366"/>
+        </scene>
+        <!--Yo Store Tab Bar Controller-->
+        <scene sceneID="IOm-6a-ZW2">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="YOS-P3-1zM" customClass="YoStoreTabBarController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="qvr-Xe-hrI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZRo-tp-1j8" kind="relationship" relationship="viewControllers" id="r5V-m4-o1Z"/>
+                        <segue destination="R3Y-It-L6n" kind="relationship" relationship="viewControllers" id="0SV-p4-lyT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeH-Aa-pxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="398"/>
+        </scene>
+        <!--Subscriptions-->
+        <scene sceneID="AzA-R4-zlV">
+            <objects>
+                <viewController title="Subscriptions" id="R3Y-It-L6n" customClass="YoStoreSubscriptionsController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CHu-Ke-liG"/>
+                        <viewControllerLayoutGuide type="bottom" id="eGH-rK-1VF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HER-O1-5b7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="81s-2W-F1N">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="R3Y-It-L6n" id="3bZ-Ov-vew"/>
+                                    <outlet property="delegate" destination="R3Y-It-L6n" id="7wE-LS-r29"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn't subscribe yet? What are you waiting for? 😜" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh4-gU-VCA">
+                                <rect key="frame" x="20" y="267" width="560" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="7RU-rn-PiQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jh4-gU-VCA" firstAttribute="centerX" secondItem="HER-O1-5b7" secondAttribute="centerX" id="6Sp-ga-h74"/>
+                            <constraint firstItem="81s-2W-F1N" firstAttribute="left" secondItem="HER-O1-5b7" secondAttribute="left" id="JRU-IA-gWx"/>
+                            <constraint firstItem="81s-2W-F1N" firstAttribute="top" secondItem="CHu-Ke-liG" secondAttribute="bottom" id="LED-vf-3BL"/>
+                            <constraint firstItem="Jh4-gU-VCA" firstAttribute="centerY" secondItem="HER-O1-5b7" secondAttribute="centerY" id="Ryg-8M-hv9"/>
+                            <constraint firstItem="eGH-rK-1VF" firstAttribute="top" secondItem="81s-2W-F1N" secondAttribute="bottom" id="UMD-Rg-6mf"/>
+                            <constraint firstAttribute="right" secondItem="81s-2W-F1N" secondAttribute="right" id="giQ-3Y-QyC"/>
+                            <constraint firstAttribute="trailing" secondItem="Jh4-gU-VCA" secondAttribute="trailing" constant="20" id="gzO-wR-Whu"/>
+                            <constraint firstItem="Jh4-gU-VCA" firstAttribute="leading" secondItem="HER-O1-5b7" secondAttribute="leading" constant="20" id="jpa-Jg-5pf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Subscribed" image="check_mark" id="qlz-Vb-GGV"/>
+                    <navigationItem key="navigationItem" id="pAg-a5-TNL"/>
+                    <connections>
+                        <outlet property="emptyLabel" destination="Jh4-gU-VCA" id="AFf-xB-raC"/>
+                        <outlet property="tableView" destination="81s-2W-F1N" id="s71-8w-qrl"/>
+                        <segue destination="buO-7t-uOL" kind="show" id="1UZ-t3-tgY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oCy-Qn-Slq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155" y="787"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="check_mark" width="32" height="23"/>
+        <image name="yo_icon_filled" width="43" height="43"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1UZ-t3-tgY"/>
+    </inferredMetricsTieBreakers>
+</document>

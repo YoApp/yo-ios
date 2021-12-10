@@ -1,0 +1,423 @@
+[
+  {
+    "name" : "STOCKWATCH",
+    "popularity" : 0,
+    "sends_yo_when" : "your stock reaches your target price",
+    "url" : "http://yostockwatch.herokuapp.com"
+  },
+  {
+    "name" : "YOFEED",
+    "popularity" : -40,
+    "sends_yo_when" : "your favorite RSS feed has a new post",
+    "url" : "http://alex.miller.im/yo/"
+  },
+  {
+    "name" : "YODAILYFASHION",
+    "username" : "YODAILYFASHION",
+    "popularity" : -20,
+    "sends_yo_when" : "daily fashion tips & tricks for women only",
+    "url" : "http://www.yodailyfashion.com"
+  },
+  {
+    "name" : "EPLNEWS",
+    "username" : "EPLNEWS",
+    "popularity" : -20,
+    "sends_yo_when" : "breaking English Premier League news & rumours",
+    "url" : "http://ftbpro.com"
+  },
+  {
+    "name" : "ANONYFISH",
+    "popularity" : 18,
+    "sends_yo_when" : "you have a new anonymous message",
+    "url" : "http://anonyfish.com",
+    "isOfficial": true
+  },
+  {
+    "name" : "NOWTHIS",
+    "popularity" : -2,
+    "sends_yo_when" : "breaking news happens",
+    "url" : "https://twitter.com/nowthisnews",
+    "username": "NOWTHIS",
+    "isOfficial": true
+  },
+  {
+    "name" : "YOTECHCRUNCH",
+    "popularity" : -2,
+    "sends_yo_when" : "breaking tech and startup news happen",
+    "url" : "http://yotechcrunch.com/"
+  },
+  {
+    "name" : "WEBSUMMIT",
+    "username": "WEBSUMMIT",
+    "popularity" : 1,
+    "sends_yo_when" : "major speaker announcements occur",
+    "url" : "http://websummit.net",
+    "isOfficial": true
+  },
+  {
+    "name" : "NBCNIGHTLYNEWS",
+    "username" : "NBCNIGHTLYNEWS",
+    "popularity" : 3,
+    "sends_yo_when" : "when NBC nightly news airs",
+    "url" : "http://nbcnews.com",
+    "isOfficial": true
+  },
+  {
+    "name" : "LARGEEARTHQUAKE",
+    "username": "LARGEEARTHQUAKE",
+    "popularity" : -7,
+    "sends_yo_when" : "there is an earthquake > 6.0 in magnitude",
+    "url" : "http://earthquakeyo.com"
+  },
+  {
+    "name" : "MOTOROLA",
+    "username": "MOTOROLA",
+    "popularity" : 3,
+    "sends_yo_when" : "goodies for the new Moto360",
+    "url" : "https://twitter.com/Motorola/status/504721520183496704"
+  },
+  {
+    "name" : "YOCOACHESPOLL",
+    "username": "YOCOACHESPOLL",
+    "popularity" : 1,
+    "sends_yo_when" : "USA Today's each week's new NCAAF top 25",
+    "url" : "http://www.usatoday.com/sports/ncaaf/polls/",
+    "isOfficial": true
+  },
+  {
+    "name" : "NEWS19",
+    "username": "NEWS19",
+    "popularity" : 5,
+    "sends_yo_when" : "breaking news from Columbia, SC",
+    "url" : "https://twitter.com/WLTX/status/505054754935177216",
+    "isOfficial": true
+  },
+   {
+    "name" : "ROCKFREAKS",
+    "username": "ROCKFREAKS",
+    "popularity" : 7,
+    "sends_yo_when" : "a new album review is published",
+    "url" : "http://rockfreaks.net/",
+    "isOfficial": true
+  },
+  {
+    "name" : "REDDITUSERS",
+    "username": "REDDITUSERS",
+    "popularity" : 2,
+    "sends_yo_when" : "someone famous posted on reddit",
+    "url" : "http://redditusers.com/"
+  },
+  {
+    "name" : "ALLYOUNEEDIS",
+    "popularity" : 1,
+    "sends_yo_when" : "daily pictures of your choice",
+    "url" : "http://www.allyoneedis.com/"
+  },
+  {
+    "name" : "CHELSEAGOAL",
+    "username": "CHELSEAGOAL",
+    "popularity" : -3,
+    "sends_yo_when" : "Chelsea FC scores a goal",
+    "url" : "http://www.chelseafc.com/",
+    "isOfficial": true
+  },
+  {
+    "name" : "YOMYPACKAGE",
+    "popularity" : 1,
+    "sends_yo_when" : "your package has arrived. supports Fedex/USPS/All major carriers",
+    "url" : "http://yomypackage.com"
+  },
+  {
+    "name" : "YURIECHAN",
+    "popularity" : 41,
+    "sends_yo_when" : "communicate with Yurie, your Japanese GF",
+    "url" : "http://yurie.sexy",
+    "username" : "YURICHAN"
+  },
+  {
+    "name" : "YOTHEWORLD",
+    "popularity" : 28,
+    "sends_yo_when" : "fundraiser deadline reached",
+    "url" : "http://yotheworld.org"
+  },
+  {
+    "name" : "PRODUCTHUNTED",
+    "popularity" : 12,
+    "sends_yo_when" : "a new product reached more than a 100 votes",
+    "url" : "http://yoproducthunted.herokuapp.com/",
+    "username" : "PRODUCTHUNTED"
+  },
+  {
+    "name" : "GOBILAB",
+    "popularity" : 51,
+    "sends_yo_when" : "a Gobi user saves 100gr of plastic",
+    "url" : "http://www.gobilab.com",
+    "username" : "GOBILAB"
+  },
+  {
+    "name" : "SP500HIGHER",
+    "popularity" : 29,
+    "sends_yo_when" : "the S&P500 sets a new high",
+    "username" : "SP500HIGHER"
+  },
+  {
+    "name" : "NASDAQHIGHER",
+    "popularity" : 30,
+    "sends_yo_when" : "the Nasdaq hits a new high",
+    "username" : "NASDAQHIGHER"
+  },
+  {
+    "name" : "BOPPL",
+    "popularity" : 50,
+    "sends_yo_when" : "your food order is ready",
+    "url" : "http://www.boppl.me",
+    "username" : "BOPPL"
+  },
+  {
+    "name" : "REDALERTISRAEL",
+    "popularity" : 6,
+    "sends_yo_when" : "anytime there is an incoming missile to that area",
+    "url" : "http://abcnews.go.com/blogs/technology/2014/07/red-alert-israel-will-send-a-yo-for-every-predicted-rocket-attack/",
+    "username" : "REDALERTISRAEL"
+  },
+  {
+    "name" : "GETTAXI",
+    "popularity" : 17,
+    "sends_yo_when" : "GetTaxi app gets an update",
+    "url" : "http://gettaxi.co.il",
+    "username" : "GETTAXI",
+    "isOfficial": true
+  },
+  {
+    "name" : "MATTHARTMANBLOGGED",
+    "popularity" : 8,
+    "sends_yo_when" : "a new blog post is released",
+    "url" : "http://hrt.mn",
+    "username" : "MATTHARTMANBLOGGED"
+  },
+  {
+    "name" : "YOMYIG",
+    "popularity" : 3,
+    "sends_yo_when" : "you post an Instagram your followers get a Yo",
+    "url" : "http://yomyig.com"
+  },
+  {
+    "name" : "YOWATER",
+    "popularity" : 16,
+    "sends_yo_when" : "track your water drinking habits",
+    "url" : "http://yowater.net"
+  },
+  {
+    "name" : "YAHOOLIVE",
+    "popularity" : -1,
+    "sends_yo_when" : "Official daily live shows by popular artists on Yahoo Live is on",
+    "url" : "https://screen.yahoo.com/live/",
+    "username": "YAHOOLIVE",
+    "isOfficial": true
+  },
+  {
+    "name" : "WASHINGTONPOST",
+    "username" : "WASHINGTONPOST",
+    "popularity" : 0,
+    "sends_yo_when" : "every time we publish a new article on NSA or cybersecurity",
+    "url" : "https://twitter.com/migold/status/501827787398082560",
+    "isOfficial": true
+  },
+  {
+    "name" : "RAINHOUR",
+    "popularity" : 0,
+    "sends_yo_when" : "it's due to rain within the hour in your city",
+    "url" : "http://www.yorain.co"
+  },
+  {
+    "name" : "WSJD",
+    "popularity" : 0,
+    "sends_yo_when" : "whenever the Wall Street Journal publishes a new article",
+    "url" : "https://twitter.com/mims/status/499962069773721601",
+    "username": "WSJD",
+    "isOfficial": true
+  },
+  {
+    "name" : "INSTAYO",
+    "popularity" : 1,
+    "sends_yo_when" : "the Instagram users of your choice post on Instagram",
+    "url" : "http://instayo.co"
+  },
+  {
+    "name" : "YONEEDTHIS",
+    "username" : "YONEEDTHIS",
+    "popularity" : 0,
+    "sends_yo_when" : "cute puppy pics every now and then",
+    "url" : "https://twitter.com/summeranne/status/499976714152583168"
+  },
+  {
+    "name" : "GIZMOUMUSIC",
+    "popularity" : 22,
+    "sends_yo_when" : "Gizmou releases a new song",
+    "url" : "http://gizmou.com",
+    "username" : "GIZMOUMUSIC",
+    "isOfficial": true
+  },
+  {
+    "name" : "HAPPYTODAY",
+    "popularity" : 38,
+    "sends_yo_when" : "allows you to meet others that are happy via Yo",
+    "url" : "http://yohappytoday.com"
+  },
+  {
+    "name" : "REBUILDFM",
+    "popularity" : 25,
+    "sends_yo_when" : "when a new podcast has been posted and is live",
+    "url" : "http://rebuild.fm/",
+    "username" : "REBUILDFM",
+    "isOfficial": true
+  },
+  {
+    "name" : "BETALIST",
+    "popularity" : 26,
+    "sends_yo_when" : "a new start up has been listed on the website",
+    "url" : "http://betalist.com",
+    "username" : "BETALIST",
+    "isOfficial": true
+  },
+  {
+    "name" : "IFTTT",
+    "popularity" : 2,
+    "sends_yo_when" : "you need to escape a terrible meeting + countless other actions",
+    "url" : "https://ifttt.com/yo",
+    "isOfficial": true
+  },
+  {
+    "name" : "YOBAMA",
+    "popularity" : 10,
+    "sends_yo_when" : "President Obama announces an executive order",
+    "username" : "YOBAMA"
+  },
+  {
+    "name" : "TWEETSTORM",
+    "popularity" : 9,
+    "sends_yo_when" : "venture capitalist Marc Andreeson begins a tweet storm on Twitter",
+    "url" : "http://www.yvoschaap.com/pmarca/",
+    "username" : "TWEETSTORM"
+  },
+  {
+    "name" : "THEBREAKFASTREVIEW",
+    "popularity" : 29,
+    "sends_yo_when" : "a new breakfast review is up",
+    "url" : "http://www.breakfast-reviews.net/",
+    "username" : "THEBREAKFASTREVIEW",
+    "isOfficial": true
+  },
+  {
+    "name" : "HARDBOILEDYO",
+    "popularity" : 23,
+    "sends_yo_when" : "your egg has finished boiling",
+    "url" : "http://yoyoke.herokuapp.com/",
+    "username" : "HARDBOILEDYO"
+  },
+  {
+    "name" : "SOFTBOILEDYO",
+    "popularity" : 42,
+    "sends_yo_when" : "your soft boiled egg is ready",
+    "url" : "http://yoyoke.herokuapp.com/",
+    "username" : "SOFTBOILEDYO"
+  },
+  {
+    "name" : "AUTHENTICJOBS",
+    "popularity" : 18,
+    "sends_yo_when" : "new jobs are posted on the board",
+    "url" : "http://www.authenticjobs.com/yo/",
+    "username" : "AUTHENTICJOBS"
+  },
+  {
+    "name" : "NIEMANLAB",
+    "popularity" : 20,
+    "sends_yo_when" : "a new story has been published on the journalism lab at Harvard",
+    "url" : "http://www.niemanlab.org/",
+    "username" : "NIEMANLAB",
+    "isOfficial": true
+  },
+  {
+    "name" : "YOAUTH",
+    "popularity" : 18,
+    "sends_yo_when" : "you want to authenticate to a site",
+    "url" : "http://yoauth.herokuapp.com/"
+  },
+  {
+    "name" : "DAILYMEETING",
+    "popularity" : 6,
+    "sends_yo_when" : "your daily meeting starts",
+    "url" : "http://dailymeetingyo.com/"
+  },
+  {
+    "name" : "YODAILYJOKE",
+    "username" : "YODAILYJOKE",
+    "popularity" : 1,
+    "sends_yo_when" : "your daily joke",
+    "url" : "http://yodailyjoke.com/"
+  },
+  {
+    "name" : "YOTIFYME",
+    "popularity" : 6,
+    "sends_yo_when" : "you got a payment on PayPal, Stripe or Coinbase",
+    "url" : "https://yotify.me/"
+  },
+  {
+    "name" : "BREAKINGNBA",
+    "username": "BREAKINGNBA",
+    "popularity" : 0,
+    "sends_yo_when" : "breaking NBA news"
+  },
+  {
+    "name" : "YOYOUTUBE",
+    "popularity" : 2,
+    "sends_yo_when" : "a new video by your favorite artist was uploaded",
+    "url" : "http://yoyoutubevideo.com/"
+  },
+  {
+    "name" : "HASHTAGCOUNTER",
+    "popularity" : 20,
+    "sends_yo_when" : "create a Yo hashtag for your topic",
+    "url" : "http://counter.justyo.co/"
+  },
+  {
+    "name" : "CRAIGSLIST",
+    "popularity" : 1,
+    "sends_yo_when" : "a new listing comes up in your craigslist search",
+    "url" : "http://craigsyo.co/"
+  },
+  {
+    "name" : "YOCITIBIKE",
+    "popularity" : 3,
+    "sends_yo_when" : "rental bikes near you are available for use in NYC",
+    "url" : "http://yobikenyc.com/"
+  },
+  {
+    "name" : "YOBAYBIKE",
+    "popularity" : 3,
+    "sends_yo_when" : "rental bikes near you are available for use in SF",
+    "url" : "http://bay.yobike.org/"
+  },
+  {
+    "name" : "YOINDEX",
+    "username": "YOINDEX",
+    "popularity" : 4,
+    "sends_yo_when" : "the Yo Index is updated",
+    "isOfficial": true
+  },
+  {
+    "name" : "YOHACKERNEWS",
+    "popularity" : 4,
+    "sends_yo_when" : "a post on Hacker News crosses 500 upvotes.",
+    "url" : "https://github.com/sauravtom/yohackernews",
+    "username" : "YOHACKERNEWS"
+  },
+  {
+    "name" : "HITCH",
+    "popularity" : 20,
+    "sends_yo_when" : "a few minutes before opening and closing the hitch ride service",
+    "url" : "http://takehitch.com",
+    "username" : "HITCH",
+    "isOfficial": true
+  }
+]

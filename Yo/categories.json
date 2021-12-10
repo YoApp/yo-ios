@@ -1,0 +1,122 @@
+{
+    "categories":[
+                  {
+                  "identifier":"☝️.✌️",
+                  "example_push_text":"",
+                  "actions":[
+                             {
+                             "title":"☝️",
+                             "identifier":"☝️",
+                             "is_background":true,
+                             "is_destructive":false
+                             },
+                             {
+                             "title":"✌️",
+                             "identifier":"✌️",
+                             "is_background":true,
+                             "is_destructive":false
+                             }
+                             ]
+                  },
+                  {
+                  "identifier":"👎.👍",
+                  "example_push_text":"",
+                  "actions":[
+                             {
+                             "title":"👍",
+                             "identifier":"👍",
+                             "is_background":true,
+                             "is_destructive":false
+                             },
+                             {
+                             "title":"👎",
+                             "identifier":"👎",
+                             "is_background":true,
+                             "is_destructive":false
+                             }
+                             ]
+                  },
+                  {
+                  "identifier":"call.text",
+                  "example_push_text":"",
+                  "actions":[
+                             {
+                             "title":"📞 Call",
+                             "identifier":"call",
+                             "is_background":false,
+                             "is_destructive":false
+                             },
+                             {
+                             "title":"💬 Text",
+                             "identifier":"text",
+                             "is_background":false,
+                             "is_destructive":false
+                             }
+                             ]
+                  },
+                  {
+                  "identifier": "default_yo",
+                  "example_push_text":"",
+                  "actions":[
+                             {
+                             "title":"Send Yo",
+                             "identifier":"yo",
+                             "is_background":true,
+                             "is_destructive":false
+                             },
+                             {
+                             "title":"Send 📍",
+                             "identifier":"send.location",
+                             "is_background":true,
+                             "is_destructive":false
+                             }
+                             ]
+                  },
+                  {
+                  "identifier":"cancel|send",
+                  "example_push_text":"Send ETA to Or A.",
+                  "actions":[
+                             {
+                             "title":"Cancel",
+                             "identifier":"cancel",
+                             "is_background":true,
+                             "is_destructive":false
+                             },
+                             {
+                             "title":"Send 📍",
+                             "identifier":"send.location",
+                             "is_background":true,
+                             "is_destructive":false
+                             }
+                             ]
+                  },
+                  {
+                  "identifier":"yo.back|yo.location",
+                  "actions":[
+                             {
+                             "title":"Send Yo",
+                             "identifier":"send.yo",
+                             "is_background":true,
+                             "is_destructive":false
+                             },
+                             {
+                             "title":"Send 📍",
+                             "identifier":"send.location",
+                             "is_background":true,
+                             "is_destructive":false
+                             }
+                             ]
+                  },
+                  {
+                  "dentifier":"unsubscribe",
+                  "actions":[
+                             {
+                             "title":"Unsubscribe",
+                             "identifier":"unsubscribe",
+                             "is_background":true,
+                             "is_destructive":true
+                             }
+                             ]
+                  }
+                  ]
+}

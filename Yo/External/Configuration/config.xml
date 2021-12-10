@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <Misc>
+    </Misc>
+    <YoLink>
+        <YoLinkLongTapDuration>1.5</YoLinkLongTapDuration>
+        <YoLinkInAppPushViewDuration>7</YoLinkInAppPushViewDuration>
+    </YoLink>
+</Configuration>

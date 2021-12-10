@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoubleActionCell" id="8zS-wm-pog" customClass="YODoubleActionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8zS-wm-pog" id="BM2-DA-UHb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K07-Fj-Ybv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g85-jk-jIe">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="89"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="MAIL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftButtonTapped:" destination="8zS-wm-pog" eventType="touchUpInside" id="5Na-c8-NL6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqh-s9-eFO">
+                                <rect key="frame" x="160" y="0.0" width="160" height="89"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="RATE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightButtonTapped:" destination="8zS-wm-pog" eventType="touchUpInside" id="2Ke-fG-kLp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g85-jk-jIe" firstAttribute="width" secondItem="K07-Fj-Ybv" secondAttribute="width" multiplier="1:2" id="1MQ-hv-ve8"/>
+                            <constraint firstItem="sqh-s9-eFO" firstAttribute="width" secondItem="g85-jk-jIe" secondAttribute="width" id="8qd-U4-pVH"/>
+                            <constraint firstItem="sqh-s9-eFO" firstAttribute="top" secondItem="K07-Fj-Ybv" secondAttribute="top" id="Gm1-Xa-qtJ"/>
+                            <constraint firstAttribute="bottom" secondItem="g85-jk-jIe" secondAttribute="bottom" id="VWV-rp-d5C"/>
+                            <constraint firstAttribute="right" secondItem="sqh-s9-eFO" secondAttribute="right" id="bTr-TF-GKG"/>
+                            <constraint firstItem="g85-jk-jIe" firstAttribute="top" secondItem="K07-Fj-Ybv" secondAttribute="top" id="mWY-FL-gOl"/>
+                            <constraint firstItem="g85-jk-jIe" firstAttribute="left" secondItem="K07-Fj-Ybv" secondAttribute="left" id="ss4-c1-9sG"/>
+                            <constraint firstAttribute="bottom" secondItem="sqh-s9-eFO" secondAttribute="bottom" id="vdW-9A-rfH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="K07-Fj-Ybv" firstAttribute="left" secondItem="BM2-DA-UHb" secondAttribute="left" id="Rtp-x8-oxm"/>
+                    <constraint firstAttribute="bottom" secondItem="K07-Fj-Ybv" secondAttribute="bottom" id="SyJ-7k-XQr"/>
+                    <constraint firstItem="K07-Fj-Ybv" firstAttribute="top" secondItem="BM2-DA-UHb" secondAttribute="top" id="YnY-uJ-C4J"/>
+                    <constraint firstAttribute="right" secondItem="K07-Fj-Ybv" secondAttribute="right" id="gIT-FG-UFw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftButton" destination="g85-jk-jIe" id="kqr-rr-CGd"/>
+                <outlet property="rightButton" destination="sqh-s9-eFO" id="W0x-Mb-76f"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

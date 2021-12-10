@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="joY-Uc-EUG" customClass="YoBannerNotificationView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fb4-TK-Trw" userLabel="textContianer">
+                    <rect key="frame" x="8" y="8" width="238" height="74"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left to view a contacts profile. Try it!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-5r-bZJ">
+                            <rect key="frame" x="8" y="0.0" width="230" height="74"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cHC-5r-bZJ" secondAttribute="bottom" id="1lp-7z-ozI"/>
+                        <constraint firstItem="cHC-5r-bZJ" firstAttribute="left" secondItem="Fb4-TK-Trw" secondAttribute="left" constant="8" id="2if-uR-fEF"/>
+                        <constraint firstAttribute="bottom" secondItem="cHC-5r-bZJ" secondAttribute="bottom" id="4lD-qw-hGZ"/>
+                        <constraint firstAttribute="right" secondItem="cHC-5r-bZJ" secondAttribute="right" id="G3J-ZC-HsI"/>
+                        <constraint firstAttribute="trailing" secondItem="cHC-5r-bZJ" secondAttribute="trailing" id="KNw-gZ-iEu"/>
+                        <constraint firstItem="cHC-5r-bZJ" firstAttribute="top" secondItem="Fb4-TK-Trw" secondAttribute="top" id="ooQ-ZM-49X"/>
+                        <constraint firstItem="cHC-5r-bZJ" firstAttribute="leading" secondItem="Fb4-TK-Trw" secondAttribute="leading" id="uYl-Lc-mdw"/>
+                        <constraint firstAttribute="centerY" secondItem="cHC-5r-bZJ" secondAttribute="centerY" constant="-6.5" id="y4C-Rh-mbB"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1lp-7z-ozI"/>
+                            <exclude reference="KNw-gZ-iEu"/>
+                            <exclude reference="uYl-Lc-mdw"/>
+                            <exclude reference="y4C-Rh-mbB"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdo-xN-brG">
+                    <rect key="frame" x="254" y="7" width="62" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="SuQ-nY-8Yn"/>
+                        <constraint firstAttribute="height" constant="76" id="wkz-Y8-yTL"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="17" minY="24" maxX="17" maxY="24"/>
+                    <state key="normal" image="dismiss_image">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissButtonTapped:" destination="joY-Uc-EUG" eventType="touchUpInside" id="2cA-5h-tET"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.16847138106822968" green="0.51802176237106323" blue="0.82454198598861694" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="right" secondItem="jdo-xN-brG" secondAttribute="right" constant="4" id="0kz-uT-iJ3"/>
+                <constraint firstItem="Fb4-TK-Trw" firstAttribute="top" secondItem="joY-Uc-EUG" secondAttribute="top" constant="8" id="1OT-LT-APw"/>
+                <constraint firstAttribute="bottom" secondItem="Fb4-TK-Trw" secondAttribute="bottom" constant="16" id="1e8-BH-hqU"/>
+                <constraint firstItem="Fb4-TK-Trw" firstAttribute="left" secondItem="joY-Uc-EUG" secondAttribute="left" constant="8" id="3sf-lA-Pcf"/>
+                <constraint firstAttribute="centerY" secondItem="jdo-xN-brG" secondAttribute="centerY" id="EKY-de-yfS"/>
+                <constraint firstAttribute="trailing" secondItem="Fb4-TK-Trw" secondAttribute="trailing" constant="9" id="WzD-En-Jbm"/>
+                <constraint firstAttribute="bottom" secondItem="Fb4-TK-Trw" secondAttribute="bottom" constant="8" id="jTe-9B-B10"/>
+                <constraint firstItem="Fb4-TK-Trw" firstAttribute="top" secondItem="joY-Uc-EUG" secondAttribute="top" constant="8" id="uSp-CY-IyM"/>
+                <constraint firstItem="jdo-xN-brG" firstAttribute="left" secondItem="Fb4-TK-Trw" secondAttribute="right" constant="8" id="vh9-VK-f9Q"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1OT-LT-APw"/>
+                    <exclude reference="1e8-BH-hqU"/>
+                    <exclude reference="WzD-En-Jbm"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="messageLabel" destination="cHC-5r-bZJ" id="Ieo-gd-mHG"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="dismiss_image" width="31" height="31"/>
+    </resources>
+</document>

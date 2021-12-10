@@ -1,0 +1,6 @@
+futures==3.0.3
+poster==0.8.1
+requests==2.7.0
+simples3==1.0
+tinys3==0.1.11
+wsgiref==0.1.2
